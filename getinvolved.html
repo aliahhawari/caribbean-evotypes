@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prostate Cancer Evotypes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Navigation bar -->
+  <nav class="navbar">
+    <div class="logo">
+        <img class ="site-logo"
+                src="images/logo.png" 
+                alt="Carribean Evotypes logo">
+    </div>
+
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="research.html">Our Research</a>
+      <a href="getinvolved.html" class="active">Get Involved</a>
+      <a href="updates.html">Updates</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <a href="getinvolved.html" class="nav-button">Get Involved</a>
+  </nav>
+
+<main class="involved-page">
+
+  <!-- Hero section -->
+  <section class="involved-hero">
+    <div>
+      <h1>Get Involved</h1>
+      <p>
+        We want this research to be shaped with the people and communities it aims to serve.
+      </p>
+      <a href="#interest-form" class="involved-button">Register your interest</a>
+    </div>
+  </section>
+
+  <!-- Who can get involved -->
+  <section class="involved-section yellow-block">
+    <h2>Who can get involved?</h2>
+
+    <div class="involved-grid">
+
+      <div class="involved-card">
+        <div class="involved-icon">👤</div>
+        <h3>Patients</h3>
+        <p>Men with lived experience of prostate cancer.</p>
+      </div>
+
+      <div class="involved-card">
+        <div class="involved-icon">👥</div>
+        <h3>Family members</h3>
+        <p>Relatives, carers and supporters of men affected by prostate cancer.</p>
+      </div>
+
+      <div class="involved-card">
+        <div class="involved-icon">🤝</div>
+        <h3>Community organisations</h3>
+        <p>Groups working with African-Caribbean communities in the UK or Jamaica.</p>
+      </div>
+
+      <div class="involved-card">
+        <div class="involved-icon">🩺</div>
+        <h3>Healthcare professionals</h3>
+        <p>Doctors, nurses and professionals involved in prostate cancer care.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Ways to contribute -->
+  <section class="involved-section black-block">
+    <h2>Ways you can contribute</h2>
+
+    <div class="steps-row">
+
+      <div class="involved-step">
+        <span>1</span>
+        <h3>Share your views</h3>
+        <p>Help us understand what matters most to patients and communities.</p>
+      </div>
+
+      <div class="involved-step">
+        <span>2</span>
+        <h3>Review materials</h3>
+        <p>Comment on leaflets, questionnaires and website content.</p>
+      </div>
+
+      <div class="involved-step">
+        <span>3</span>
+        <h3>Join discussions</h3>
+        <p>Take part in meetings, workshops or community conversations.</p>
+      </div>
+
+      <div class="involved-step">
+        <span>4</span>
+        <h3>Help shape the research</h3>
+        <p>Support how we communicate and share findings with communities.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PPIE update link -->
+  <section class="involved-section ppie-link-box">
+    <h2>Our community and PPIE work</h2>
+    <p>
+      We are already working with patients, public contributors and community partners
+      to shape this study.
+    </p>
+    <a href="updates.html" class="text-link">See our PPIE updates →</a>
+  </section>
+
+  <!-- Form section -->
+  <section class="involved-section form-section" id="interest-form">
+    <h2>Register your interest</h2>
+    <p>
+      This form is a placeholder for now. Later, this can be connected securely to
+      a database or approved institutional form.
+    </p>
+
+    <form class="interest-form">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name">
+
+      <label for="email">Email address</label>
+      <input type="email" id="email" name="email">
+
+      <label for="role">I am a...</label>
+      <select id="role" name="role">
+        <option>Patient</option>
+        <option>Family member or carer</option>
+        <option>Community organisation</option>
+        <option>Healthcare professional</option>
+        <option>Researcher</option>
+        <option>Other</option>
+      </select>
+
+      <label for="message">How would you like to be involved?</label>
+      <textarea id="message" name="message" rows="5"></textarea>
+
+      <button type="submit">Submit interest</button>
+    </form>
+  </section>
+
+</main>
+
+</body>
+</html>
