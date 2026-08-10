@@ -1707,3 +1707,103 @@ height:300px;
 }
 
 }
+
+.page-banner {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+}
+
+.page-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Shared page hero banner */
+.hero-banner {
+  min-height: 430px;
+  display: flex;
+  align-items: center;
+  padding: 60px 8%;
+  box-sizing: border-box;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-content {
+  width: 100%;
+  max-width: 780px;
+}
+
+.hero-content h1 {
+  margin: 0;
+
+  color: #f5b800;
+  font-size: clamp(5rem, 10vw, 10rem);
+  font-weight: 900;
+  line-height: 0.85;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+}
+
+.hero-line {
+  width: 80px;
+  height: 5px;
+  margin: 34px 0 22px;
+
+  background-color: #f5b800;
+}
+
+.hero-content p {
+  max-width: 680px;
+  margin: 0;
+
+  color: #ffffff;
+  font-size: 1.3rem;
+  line-height: 1.55;
+}
+
+/* About Us banner background */
+.about-banner {
+  background-color: #000000;
+
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0.92) 42%,
+      rgba(0, 0, 0, 0.35) 100%
+    ),
+    url("images/about-banner-background.png");
+}
+
+@media (max-width: 768px) {
+  .hero-banner {
+    min-height: 380px;
+    padding: 50px 6%;
+    align-items: flex-end;
+  }
+
+  .about-banner {
+    background-position: 65% center;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(4rem, 18vw, 7rem);
+  }
+
+  .hero-line {
+    width: 60px;
+    height: 4px;
+    margin: 25px 0 18px;
+  }
+
+  .hero-content p {
+    max-width: 100%;
+    font-size: 1.05rem;
+    line-height: 1.5;
+  }
+}
