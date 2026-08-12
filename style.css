@@ -640,11 +640,12 @@ footer p {
 }
 
 
-/* 3 cards across */
+/* 4 cards across */
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+  width: 100%;
 }
 
 
@@ -2601,6 +2602,1717 @@ FINAL STRIP
 
   .event-heard {
     padding: 30px;
+  }
+
+}
+
+/* ==================================================
+   UPCOMING EVENT DETAIL PAGE
+================================================== */
+
+
+/* --------------------------------------------------
+   HERO
+-------------------------------------------------- */
+
+.upcoming-detail-hero {
+  min-height: 470px;
+
+  background: #050505;
+  color: white;
+
+  display: grid;
+  grid-template-columns: 47% 53%;
+
+  overflow: hidden;
+}
+
+
+.upcoming-detail-copy {
+  padding: 55px 5% 55px 7%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.upcoming-detail-label {
+  display: inline-block;
+  align-self: flex-start;
+
+  background: #006B4F;
+  color: white;
+
+  padding: 8px 15px;
+
+  border-radius: 25px;
+
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+
+  margin-bottom: 25px;
+}
+
+
+.upcoming-detail-copy h1 {
+  margin: 0;
+
+  color: #FFD400;
+
+  font-size: clamp(3.4rem, 5vw, 5.5rem);
+  line-height: 0.95;
+  font-weight: 900;
+
+  text-transform: uppercase;
+}
+
+
+.upcoming-detail-copy h1 span {
+  color: white;
+}
+
+
+.event-script-title {
+  color: #008F62;
+
+  font-family: Georgia, serif;
+  font-size: 3rem;
+  font-style: italic;
+
+  margin: 8px 0 20px;
+}
+
+
+.upcoming-detail-intro {
+  max-width: 590px;
+
+  color: white;
+
+  font-size: 1.2rem;
+  line-height: 1.6;
+
+  margin: 0;
+}
+
+
+/* Hero image */
+
+.upcoming-detail-image {
+  position: relative;
+  overflow: hidden;
+
+  border-bottom-left-radius: 50% 35%;
+  border-top-left-radius: 25% 20%;
+
+  border-left: 14px solid #006B4F;
+}
+
+
+.upcoming-detail-image img {
+  width: 100%;
+  height: 100%;
+
+  min-height: 470px;
+
+  object-fit: cover;
+  object-position: center;
+
+  display: block;
+}
+
+
+/* --------------------------------------------------
+   QUICK DETAILS
+-------------------------------------------------- */
+
+.event-facts {
+  background: #FAF8F2;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  padding: 30px 6%;
+
+  border-bottom: 1px solid #ddd;
+}
+
+
+.event-fact {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+
+  padding: 5px 25px;
+
+  border-right: 1px solid #d8d8d8;
+}
+
+
+.event-fact:last-child {
+  border-right: none;
+}
+
+
+.event-fact-icon {
+  width: 80px;
+  height: 80px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.event-fact-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 50%;
+}
+
+
+.event-fact span {
+  display: block;
+
+  color: #111;
+
+  font-size: 0.8rem;
+  font-weight: 800;
+
+  margin-bottom: 7px;
+}
+
+
+.event-fact p {
+  margin: 0 0 4px;
+
+  color: #111;
+
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+
+.event-fact strong {
+  color: #111;
+}
+
+
+.event-fact small {
+  color: #555;
+}
+
+
+/* --------------------------------------------------
+   MAIN CONTENT
+-------------------------------------------------- */
+
+.upcoming-detail-page {
+  background: #FAF8F2;
+  color: #16324f;
+
+  padding: 55px 6% 70px;
+}
+
+
+.upcoming-info-grid {
+  max-width: 1200px;
+
+  margin: 0 auto 55px;
+
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+
+  gap: 65px;
+
+  align-items: start;
+}
+
+
+/* About */
+
+.upcoming-about h2,
+.what-to-expect h2 {
+  margin: 0;
+
+  color: #006B4F;
+
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+
+.small-gold-line {
+  width: 42px;
+  height: 3px;
+
+  background: #D99A13;
+
+  margin: 12px 0 25px;
+}
+
+
+.upcoming-about p {
+  font-size: 1.05rem;
+  line-height: 1.75;
+
+  margin: 0 0 18px;
+}
+
+
+/* --------------------------------------------------
+   WHAT TO EXPECT
+-------------------------------------------------- */
+
+.what-to-expect {
+  background: #F1F2EC;
+
+  padding: 32px 35px;
+
+  border-radius: 15px;
+}
+
+
+.expect-item {
+  display: grid;
+  grid-template-columns: 55px 1fr;
+
+  gap: 18px;
+
+  align-items: start;
+
+  padding: 16px 0;
+}
+
+
+.expect-icon {
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #006B4F;
+  color: #FFD400;
+
+  font-weight: 800;
+}
+
+
+.expect-item h3 {
+  margin: 0 0 5px;
+
+  color: #16324f;
+
+  font-size: 1.05rem;
+}
+
+
+.expect-item p {
+  margin: 0;
+
+  color: #333;
+
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+
+/* --------------------------------------------------
+   CTA
+-------------------------------------------------- */
+
+.upcoming-event-cta {
+  max-width: 1250px;
+
+  margin: 20px auto 35px;
+
+  background: #006B4F;
+
+  border-radius: 18px;
+
+  padding: 38px 45px;
+
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+
+  gap: 40px;
+
+  align-items: center;
+}
+
+
+.upcoming-event-cta-text span {
+  color: white;
+
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+
+.upcoming-event-cta-text h2 {
+  color: #FFD400;
+
+  font-size: 2rem;
+  line-height: 1.2;
+
+  margin: 8px 0 10px;
+}
+
+
+.upcoming-event-cta-text p {
+  color: white;
+
+  margin: 0;
+
+  line-height: 1.5;
+}
+
+
+.upcoming-event-cta-action {
+  text-align: center;
+}
+
+
+.upcoming-register-button {
+  display: inline-block;
+
+  background: #FFD400;
+  color: #111;
+
+  padding: 16px 28px;
+
+  border-radius: 7px;
+
+  font-weight: 800;
+  text-transform: uppercase;
+
+  transition: transform 0.2s ease;
+}
+
+
+.upcoming-register-button:hover {
+  transform: translateY(-2px);
+}
+
+
+.upcoming-event-cta-action p {
+  margin: 14px 0 0;
+
+  color: white;
+
+  font-size: 0.9rem;
+}
+
+
+.upcoming-event-cta-action p a {
+  color: #FFD400;
+  font-weight: 700;
+}
+
+
+/* Back link */
+
+.upcoming-event-back {
+  max-width: 1200px;
+}
+
+
+/* --------------------------------------------------
+   RESPONSIVE
+-------------------------------------------------- */
+
+@media (max-width: 1000px) {
+
+  .upcoming-detail-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .upcoming-detail-image {
+    min-height: 360px;
+
+    border-left: none;
+    border-top: 10px solid #006B4F;
+
+    border-radius: 0;
+  }
+
+  .upcoming-detail-image img {
+    min-height: 360px;
+  }
+
+  .event-facts {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px 0;
+  }
+
+  .event-fact:nth-child(2) {
+    border-right: none;
+  }
+
+  .upcoming-info-grid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .upcoming-event-cta {
+    grid-template-columns: 1fr;
+  }
+
+  .upcoming-event-cta-action {
+    text-align: left;
+  }
+}
+
+
+@media (max-width: 650px) {
+
+  .upcoming-detail-copy {
+    padding: 45px 6%;
+  }
+
+  .upcoming-detail-copy h1 {
+    font-size: 3rem;
+  }
+
+  .event-script-title {
+    font-size: 2.3rem;
+  }
+
+  .event-facts {
+    grid-template-columns: 1fr;
+  }
+
+  .event-fact {
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+
+    padding: 18px 0;
+  }
+
+  .event-fact:last-child {
+    border-bottom: none;
+  }
+
+  .upcoming-detail-page {
+    padding: 45px 6% 60px;
+  }
+
+  .what-to-expect {
+    padding: 25px;
+  }
+
+  .upcoming-event-cta {
+    padding: 30px 25px;
+  }
+}
+
+/* ==================================================
+   CONTACT PAGE
+================================================== */
+
+
+/* --------------------------------------------------
+   HERO
+-------------------------------------------------- */
+
+.contact-hero {
+  min-height: 440px;
+
+  background: #050505;
+  color: white;
+
+  display: grid;
+  grid-template-columns: 47% 53%;
+
+  overflow: hidden;
+}
+
+
+.contact-hero-copy {
+  padding: 55px 5% 55px 7%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.contact-kicker {
+  color: #00A86B;
+
+  font-size: 1.1rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+
+  margin-bottom: 15px;
+}
+
+
+.contact-hero h1 {
+  margin: 0;
+
+  color: white;
+
+  font-size: clamp(3.5rem, 6vw, 6rem);
+  line-height: 0.95;
+  font-weight: 900;
+}
+
+
+.contact-hero h1 span {
+  color: #FFD400;
+}
+
+
+.contact-hero-line {
+  width: 5px;
+  height: 80px;
+
+  margin: 28px 0 0;
+
+  background:
+    linear-gradient(
+      to bottom,
+      #00A86B 0%,
+      #00A86B 33%,
+      #E52421 33%,
+      #E52421 66%,
+      #FFD400 66%,
+      #FFD400 100%
+    );
+}
+
+
+.contact-hero-copy p {
+  max-width: 520px;
+
+  margin: -80px 0 0 25px;
+
+  color: white;
+
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+
+/* Hero image */
+
+.contact-hero-image {
+  position: relative;
+
+  overflow: hidden;
+
+  border-bottom-left-radius: 50% 45%;
+
+  border-left: 4px solid #FFD400;
+}
+
+
+.contact-hero-image img {
+  width: 100%;
+  height: 100%;
+
+  min-height: 440px;
+
+  object-fit: cover;
+  object-position: center;
+
+  display: block;
+}
+
+
+/* --------------------------------------------------
+   PAGE
+-------------------------------------------------- */
+
+.contact-page {
+  background: #FAF8F2;
+
+  color: #16324f;
+
+  padding: 45px 6% 70px;
+}
+
+
+/* --------------------------------------------------
+   INTRO
+-------------------------------------------------- */
+
+.contact-intro {
+  max-width: 850px;
+
+  margin: 0 auto 40px;
+
+  text-align: center;
+}
+
+
+.contact-section-kicker {
+  display: block;
+
+  color: #006B4F;
+
+  font-size: 1.15rem;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+
+
+.contact-gold-line {
+  width: 220px;
+  height: 3px;
+
+  background: #D99A13;
+
+  margin: 12px auto 18px;
+}
+
+
+.contact-intro p,
+.contact-connected > p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+
+  margin: 0 auto;
+
+  max-width: 760px;
+}
+
+
+/* --------------------------------------------------
+   CONTACT CARDS
+-------------------------------------------------- */
+
+.contact-options {
+  max-width: 1100px;
+
+  margin: 0 auto 55px;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 25px;
+}
+
+
+.contact-card {
+  background: white;
+
+  border-radius: 12px;
+
+  padding: 25px;
+
+  display: grid;
+  grid-template-columns: 85px 1fr;
+
+  gap: 20px;
+
+  align-items: start;
+
+  box-shadow: 0 5px 18px rgba(0,0,0,.08);
+}
+
+
+.contact-card-icon {
+  width: 75px;
+  height: 75px;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 2rem;
+  font-weight: bold;
+
+  color: white;
+}
+
+
+.green-icon {
+  background: #006B4F;
+}
+
+
+.yellow-icon {
+  background: #FFD400;
+  color: #111;
+}
+
+
+.red-icon {
+  background: #E52421;
+}
+
+
+.contact-card-content h2 {
+  margin: 0 0 8px;
+
+  color: #006B4F;
+
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+
+
+.contact-card-content p {
+  margin: 0 0 10px;
+
+  line-height: 1.5;
+}
+
+
+.contact-card-button {
+  display: inline-block;
+
+  margin-top: 10px;
+
+  padding: 11px 22px;
+
+  border-radius: 5px;
+
+  font-size: 0.9rem;
+  font-weight: 800;
+  text-transform: uppercase;
+
+  color: white;
+}
+
+
+.green-button {
+  background: #006B4F;
+}
+
+
+.yellow-button {
+  background: #FFD400;
+  color: #111;
+}
+
+
+.red-button {
+  background: #E52421;
+}
+
+
+/* --------------------------------------------------
+   RESEARCH TEAM STRIP
+-------------------------------------------------- */
+
+.contact-team-strip {
+  max-width: 1200px;
+
+  margin: 0 auto 55px;
+
+  padding: 35px 45px;
+
+  border-radius: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      #006B4F 0%,
+      #006B4F 70%,
+      #004936 100%
+    );
+
+  color: white;
+
+  display: grid;
+  grid-template-columns: 90px 1fr;
+
+  gap: 25px;
+
+  align-items: center;
+}
+
+
+.contact-team-icon {
+  width: 80px;
+  height: 80px;
+
+  border: 2px solid white;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #FFD400;
+
+  font-size: 2rem;
+}
+
+
+.contact-team-label {
+  color: #FFD400;
+
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+
+.contact-team-strip h2 {
+  margin: 6px 0;
+
+  color: white;
+
+  font-size: 1.35rem;
+}
+
+
+.contact-team-strip p {
+  margin: 0 0 12px;
+
+  color: white;
+}
+
+
+.contact-team-strip a {
+  color: #FFD400;
+
+  font-weight: 700;
+}
+
+
+/* --------------------------------------------------
+   STAY CONNECTED
+-------------------------------------------------- */
+
+.contact-connected {
+  text-align: center;
+
+  max-width: 900px;
+
+  margin: 0 auto;
+}
+
+
+.contact-connected-buttons {
+  margin-top: 25px;
+
+  display: flex;
+  justify-content: center;
+
+  gap: 20px;
+
+  flex-wrap: wrap;
+}
+
+
+.connected-button {
+  min-width: 250px;
+
+  padding: 13px 25px;
+
+  border-radius: 5px;
+
+  font-weight: 800;
+  text-transform: uppercase;
+
+  background: white;
+}
+
+
+.green-outline {
+  border: 2px solid #006B4F;
+  color: #006B4F;
+}
+
+
+.red-outline {
+  border: 2px solid #E52421;
+  color: #E52421;
+}
+
+
+/* --------------------------------------------------
+   FOOTER
+-------------------------------------------------- */
+
+.contact-footer {
+  background: #050505;
+
+  color: white;
+
+  padding: 35px 6%;
+
+  display: grid;
+  grid-template-columns: 1fr 1.6fr 1fr;
+
+  gap: 40px;
+
+  align-items: center;
+}
+
+
+.contact-footer-brand img {
+  width: 180px;
+  height: auto;
+}
+
+
+.contact-footer-text p {
+  margin: 0;
+
+  color: white;
+
+  line-height: 1.6;
+
+  font-size: 0.9rem;
+}
+
+
+.contact-footer-contact {
+  text-align: right;
+}
+
+
+.contact-footer-contact strong {
+  display: block;
+
+  color: #FFD400;
+
+  margin-bottom: 10px;
+}
+
+
+.contact-footer-contact a {
+  color: white;
+}
+
+
+/* --------------------------------------------------
+   HOVER
+-------------------------------------------------- */
+
+.contact-card-button:hover,
+.connected-button:hover {
+  transform: translateY(-2px);
+}
+
+
+/* --------------------------------------------------
+   RESPONSIVE
+-------------------------------------------------- */
+
+@media (max-width: 950px) {
+
+  .contact-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-hero-image {
+    border-left: none;
+    border-top: 4px solid #FFD400;
+
+    border-radius: 0;
+  }
+
+  .contact-hero-image img {
+    min-height: 320px;
+  }
+
+  .contact-options {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-footer {
+    grid-template-columns: 1fr;
+
+    text-align: left;
+  }
+
+  .contact-footer-contact {
+    text-align: left;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .contact-hero-copy {
+    padding: 45px 6%;
+  }
+
+  .contact-hero h1 {
+    font-size: 3.3rem;
+  }
+
+  .contact-hero-copy p {
+    font-size: 1.05rem;
+  }
+
+  .contact-page {
+    padding: 40px 6% 55px;
+  }
+
+  .contact-card {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-card-icon {
+    width: 65px;
+    height: 65px;
+  }
+
+  .contact-team-strip {
+    grid-template-columns: 1fr;
+
+    padding: 30px;
+  }
+
+}
+
+/* ==========================================================
+   PROJECT UPDATES PAGE
+========================================================== */
+
+
+/* ==========================================================
+   HERO
+========================================================== */
+
+.updates-hero {
+  min-height: 430px;
+
+  background: #050505;
+  color: white;
+
+  display: grid;
+  grid-template-columns: 44% 56%;
+
+  overflow: hidden;
+}
+
+
+.updates-hero-copy {
+  padding: 55px 5% 55px 7%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.updates-kicker {
+  color: #00A86B;
+
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+
+  margin-bottom: 15px;
+}
+
+
+.updates-hero h1 {
+  margin: 0;
+
+  color: white;
+
+  font-size: clamp(3.8rem, 6vw, 6.5rem);
+  line-height: 0.9;
+  font-weight: 900;
+}
+
+
+.updates-hero h1 span {
+  color: #FFD400;
+}
+
+
+.updates-colour-line {
+  width: 140px;
+  height: 5px;
+
+  margin: 28px 0 22px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #00A86B 0%,
+      #00A86B 33%,
+      #FFD400 33%,
+      #FFD400 66%,
+      #E52421 66%,
+      #E52421 100%
+    );
+}
+
+
+.updates-hero-copy p {
+  max-width: 600px;
+
+  margin: 0;
+
+  color: white;
+
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+
+/* Banner image */
+
+.updates-hero-image {
+  width: 100%;
+  height: 100%;
+
+  overflow: hidden;
+
+  border-bottom-left-radius: 45% 35%;
+  border-left: 4px solid #FFD400;
+}
+
+
+.updates-hero-image img {
+  width: 100%;
+  height: 100%;
+
+  min-height: 430px;
+
+  object-fit: cover;
+  object-position: center;
+
+  display: block;
+}
+
+
+/* ==========================================================
+   MAIN PAGE
+========================================================== */
+
+.updates-page {
+  background: #FAF8F2;
+  color: #16324f;
+}
+
+
+/* ==========================================================
+   SECTION HEADINGS
+========================================================== */
+
+.updates-status-section,
+.project-journey {
+  padding: 55px 6%;
+}
+
+
+.updates-section-heading {
+  text-align: center;
+
+  max-width: 850px;
+
+  margin: 0 auto 35px;
+}
+
+
+.updates-section-heading h2 {
+  margin: 0;
+
+  color: #006B4F;
+
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+.updates-heading-line {
+  width: 80px;
+  height: 3px;
+
+  background: #D99A13;
+
+  margin: 12px auto 15px;
+}
+
+
+.updates-section-heading p {
+  margin: 0;
+
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+
+/* ==========================================================
+   STATUS CARDS
+========================================================== */
+
+.updates-status-grid {
+  max-width: 1250px;
+
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 25px;
+}
+
+
+.update-status-card {
+  position: relative;
+
+  background: white;
+
+  padding: 32px;
+
+  border-radius: 12px;
+
+  box-shadow: 0 6px 22px rgba(0,0,0,.08);
+
+  display: flex;
+  flex-direction: column;
+}
+
+
+.update-card-green {
+  border-top: 5px solid #006B4F;
+}
+
+
+.update-card-yellow {
+  border-top: 5px solid #FFD400;
+}
+
+
+.update-card-red {
+  border-top: 5px solid #E52421;
+}
+
+
+.update-status-label {
+  display: block;
+
+  color: #006B4F;
+
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+
+  margin-bottom: 10px;
+}
+
+
+.update-status-card h3 {
+  color: #006B4F;
+
+  font-size: 1.35rem;
+
+  margin: 0 0 20px;
+}
+
+
+.update-status-card p {
+  font-size: 1rem;
+  line-height: 1.65;
+
+  margin: 0 0 16px;
+}
+
+
+/* Status pills */
+
+.update-pill {
+  display: inline-block;
+  align-self: flex-start;
+
+  margin: 10px 0 20px;
+
+  padding: 8px 14px;
+
+  border-radius: 25px;
+
+  font-size: 0.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+
+.update-pill-green {
+  background: #DCEEDC;
+  color: #006B4F;
+}
+
+
+.update-pill-yellow {
+  background: #FFF0B3;
+  color: #665000;
+}
+
+
+/* Card links */
+
+.update-card-link {
+  margin-top: auto;
+
+  color: #006B4F;
+
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+
+.update-card-link:hover {
+  color: #D99A13;
+}
+
+
+.update-red-link {
+  color: #E52421;
+}
+
+
+/* Community numbers */
+
+.community-numbers {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  margin: 12px 0 22px;
+
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+
+.community-numbers div {
+  padding: 18px;
+
+  text-align: center;
+}
+
+
+.community-numbers div:first-child {
+  border-right: 1px solid #ddd;
+}
+
+
+.community-numbers strong {
+  display: block;
+
+  color: #E52421;
+
+  font-size: 2.3rem;
+}
+
+
+.community-numbers span {
+  display: block;
+
+  margin-top: 4px;
+
+  font-size: 0.9rem;
+}
+
+
+/* ==========================================================
+   PROJECT JOURNEY
+========================================================== */
+
+.project-journey {
+  background: white;
+}
+
+
+.journey-track {
+  position: relative;
+
+  max-width: 1400px;
+
+  margin: 45px auto 0;
+
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+
+  gap: 20px;
+}
+
+
+/* Connecting line */
+
+.journey-track::before {
+  content: "";
+
+  position: absolute;
+
+  top: 36px;
+  left: 8%;
+  right: 8%;
+
+  height: 4px;
+
+  background: #dddddd;
+
+  z-index: 0;
+}
+
+
+.journey-step {
+  position: relative;
+
+  z-index: 1;
+
+  text-align: center;
+}
+
+
+.journey-dot {
+  width: 72px;
+  height: 72px;
+
+  margin: 0 auto 15px;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #dddddd;
+  color: #666;
+
+  border: 6px solid white;
+
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+
+.journey-complete .journey-dot,
+.journey-current .journey-dot {
+  background: #006B4F;
+  color: white;
+}
+
+
+.journey-next .journey-dot {
+  background: #FFD400;
+  color: #111;
+}
+
+
+.journey-status {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #888;
+
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+
+.journey-complete .journey-status,
+.journey-current .journey-status {
+  color: #006B4F;
+}
+
+
+.journey-next .journey-status {
+  color: #D99A13;
+}
+
+
+.journey-step h3 {
+  color: #16324f;
+
+  font-size: 1rem;
+  line-height: 1.35;
+
+  margin: 0 0 10px;
+}
+
+
+.journey-step p {
+  margin: 0;
+
+  color: #555;
+
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+
+/* ==========================================================
+   RECRUITMENT CTA
+========================================================== */
+
+.updates-recruitment-cta {
+  background: #006B4F;
+  color: white;
+
+  padding: 45px 7%;
+
+  display: grid;
+  grid-template-columns: 220px 1fr;
+
+  gap: 40px;
+
+  align-items: center;
+}
+
+
+.updates-cta-image img {
+  width: 190px;
+  height: 190px;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+
+  border: 4px solid #FFD400;
+
+  display: block;
+}
+
+
+.updates-cta-copy > span {
+  color: white;
+
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+
+.updates-cta-copy h2 {
+  max-width: 800px;
+
+  margin: 8px 0 12px;
+
+  color: white;
+
+  font-size: 2rem;
+}
+
+
+.updates-cta-copy h2 strong {
+  color: #FFD400;
+}
+
+
+.updates-cta-copy p {
+  max-width: 850px;
+
+  color: white;
+
+  font-size: 1rem;
+  line-height: 1.6;
+
+  margin-bottom: 22px;
+}
+
+
+.updates-cta-button {
+  display: inline-block;
+
+  background: #FFD400;
+  color: #111;
+
+  padding: 14px 25px;
+
+  border-radius: 6px;
+
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+
+.updates-cta-button:hover {
+  transform: translateY(-2px);
+}
+
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media (max-width: 1000px) {
+
+  .updates-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .updates-hero-image {
+    border-left: none;
+    border-top: 4px solid #FFD400;
+
+    border-radius: 0;
+  }
+
+  .updates-hero-image img {
+    min-height: 340px;
+  }
+
+
+  .updates-status-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .journey-track {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 40px 25px;
+  }
+
+
+  .journey-track::before {
+    display: none;
+  }
+
+}
+
+
+@media (max-width: 650px) {
+
+  .updates-hero-copy {
+    padding: 45px 6%;
+  }
+
+
+  .updates-hero h1 {
+    font-size: 3.5rem;
+  }
+
+
+  .updates-status-section,
+  .project-journey {
+    padding: 45px 6%;
+  }
+
+
+  .journey-track {
+    grid-template-columns: 1fr;
+  }
+
+
+  .updates-recruitment-cta {
+    grid-template-columns: 1fr;
+
+    text-align: center;
+  }
+
+
+  .updates-cta-image img {
+    margin: 0 auto;
   }
 
 }
