@@ -817,7 +817,25 @@ TOP SECTION
 /*==========================================================
 RIGHT PANEL
 ==========================================================*/
+/* Research sample plan infographic */
+.research-sample-plan {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  overflow: hidden;
+  background: #000;
+}
 
+.research-sample-plan img {
+  display: block;
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  object-fit: contain;
+}
+
+/*old*/
 .research-numbers{
 
     background:#0D5738;
@@ -1234,6 +1252,252 @@ FINAL STRIP
 
 }
 
+/* ==========================================================
+   RESEARCH PAGE - TABLET / MOBILE
+========================================================== */
+
+@media (max-width: 900px) {
+
+  /* ---------- TOP SECTION ---------- */
+
+  .research-top {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .research-yellow {
+    padding: 35px 30px;
+  }
+
+  .research-yellow h1 {
+    font-size: 34px;
+    line-height: 1.05;
+    margin-top: 0;
+  }
+
+  .lead-text {
+    font-size: 19px;
+    line-height: 1.45;
+  }
+
+  .research-point {
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+
+  .research-point p {
+    font-size: 17px;
+    line-height: 1.4;
+    margin: 0;
+  }
+
+
+  /* ---------- SAMPLE PLAN IMAGE ---------- */
+
+  .research-sample-plan {
+    width: 100%;
+    background: #000;
+    padding: 15px 5px 25px;
+  }
+
+  .research-sample-plan img {
+    width: 100%;
+    max-width: 750px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+
+  /* ---------- WHAT WILL WE DO ---------- */
+
+  .research-dark {
+    padding: 50px 30px;
+  }
+
+  .research-dark h2 {
+    font-size: 36px;
+    margin: 0 0 40px;
+    text-align: center;
+  }
+
+  .process-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .process-step {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .process-icon {
+    font-size: 60px;
+    margin: 15px 0;
+  }
+
+  .process-arrow {
+    transform: rotate(90deg);
+    margin: 5px 0 15px;
+    font-size: 38px;
+  }
+
+
+  /* ---------- WGS SECTION ---------- */
+
+  .research-light {
+    padding: 45px 25px;
+  }
+
+  .three-column-section {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .explain-card {
+    padding: 25px 15px;
+  }
+
+  .large-icon {
+    font-size: 90px;
+    margin: 20px;
+  }
+
+  .music-line {
+    font-size: 45px;
+    margin: 25px 10px;
+  }
+
+
+  /* ---------- EVOTYPES / BOTTOM ---------- */
+
+  .research-bottom {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    padding: 50px 30px;
+  }
+
+  .routes-graphic {
+    margin-top: 20px;
+    gap: 18px;
+  }
+
+  .route {
+    width: 90px;
+    height: 240px;
+  }
+
+  .find-out,
+  .impact-panel {
+    padding: 30px;
+  }
+
+  .find-out li {
+    font-size: 18px;
+  }
+
+  .impact-mini-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+
+  /* ---------- FINAL QUOTE ---------- */
+
+  .research-quote {
+    padding: 30px 20px;
+    font-size: 28px;
+  }
+
+}
+
+
+/* ==========================================================
+   RESEARCH PAGE - SMALL PHONES
+========================================================== */
+
+@media (max-width: 500px) {
+
+  .research-yellow {
+    padding: 28px 20px;
+  }
+
+  .research-yellow h1 {
+    font-size: 29px;
+  }
+
+  .lead-text {
+    font-size: 18px;
+  }
+
+  .research-point p {
+    font-size: 16px;
+  }
+
+
+  /* Make infographic use more of the phone width */
+  .research-sample-plan {
+    padding: 8px 0 18px;
+    overflow: hidden;
+  }
+
+  .research-sample-plan img {
+    width: 108%;
+    max-width: none;
+    margin-left: -4%;
+  }
+
+
+  .research-dark {
+    padding: 40px 20px;
+  }
+
+  .research-dark h2 {
+    font-size: 32px;
+  }
+
+
+  .research-light {
+    padding: 35px 18px;
+  }
+
+  .explain-card {
+    padding: 20px 10px;
+  }
+
+  .explain-card h2 {
+    font-size: 24px;
+  }
+
+
+  .research-bottom {
+    padding: 40px 20px;
+  }
+
+
+  .routes-graphic {
+    gap: 10px;
+  }
+
+  .route {
+    width: 75px;
+    height: 200px;
+    font-size: 14px;
+  }
+
+
+  .find-out,
+  .impact-panel {
+    padding: 25px 20px;
+  }
+
+
+  .research-quote {
+    font-size: 24px;
+    line-height: 1.3;
+  }
+
+}
 /* ======================================
    GET INVOLVED PAGE
 ====================================== */
