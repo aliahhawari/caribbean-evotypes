@@ -1,0 +1,864 @@
+/* ==========================================================
+   HOME PAGE ONLY
+   Loaded after style.css so it can refine the homepage
+   without changing About, Research, Events, Contact, etc.
+========================================================== */
+
+.home-section {
+  padding: 64px 6%;
+}
+
+.home-section-heading {
+  text-align: center;
+  margin-bottom: 34px;
+}
+
+.home-section-heading h2 {
+  margin: 0;
+  color: #16324f;
+  font-size: clamp(2rem, 3vw, 2.65rem);
+  line-height: 1.15;
+}
+
+.home-section-heading h2::after {
+  content: "";
+  display: block;
+  width: 58px;
+  height: 3px;
+  margin: 12px auto 0;
+  background: #d99a13;
+}
+
+/* ---------- HERO ---------- */
+.home-hero {
+  min-height: 150px;
+  padding: 48px 6%;
+  background-size: cover;
+  background-position: center bottom;
+}
+
+.home-hero .hero-text {
+  max-width: 660px;
+}
+
+.home-hero h1 {
+  margin: 0 0 16px;
+  font-size: clamp(2.5rem, 4vw, 3.8rem);
+  line-height: 1.08;
+}
+
+.hero-intro {
+  max-width: 610px;
+  margin: 0 0 22px;
+  color: #fff;
+  font-size: 1.12rem;
+  line-height: 1.6;
+}
+
+.home-hero .button {
+  min-width: 175px;
+  text-align: center;
+}
+
+/* ---------- WHY THIS STUDY MATTERS ---------- */
+.why-wrapper.home-section {
+  background: #faf8f2;
+  padding-top: 54px;
+  padding-bottom: 60px;
+}
+
+.why-wrapper.home-section > h2 {
+  display: none;
+}
+
+.home-why-grid {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0;
+  background: transparent;
+  align-items: stretch;
+}
+
+.home-why-card {
+  min-height: 330px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 32px 24px;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 7px 22px rgba(0,0,0,.07);
+  border: 1px solid rgba(22,50,79,.08);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.home-why-card:hover {
+  transform: translateY(-5px);
+  background: #fff;
+  box-shadow: 0 10px 28px rgba(0,0,0,.10);
+}
+
+.home-why-card .icon {
+  width: 72px;
+  height: 72px;
+  margin: 0 0 22px;
+  flex: 0 0 72px;
+  font-size: 34px;
+  background: #dcebea;
+  color: #004653;
+}
+
+.home-why-card .gold-icon {
+  background: #f7e7b5;
+}
+
+.home-why-card h3 {
+  min-height: 56px;
+  margin: 0 0 12px;
+  color: #16324f;
+  font-size: 1.25rem;
+  line-height: 1.25;
+}
+
+.home-why-card p {
+  margin: 0;
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+/* ---------- FEATURED EVENT ---------- */
+.featured-event {
+  background: #004653;
+  color: white;
+
+  display: grid;
+  grid-template-columns: 1fr 0.85fr;
+  gap: 40px;
+  align-items: center;
+
+  padding-top: 42px;
+  padding-bottom: 42px;
+}
+
+.featured-event-copy {
+  max-width: 620px;
+  justify-self: end;
+}
+
+.eyebrow,
+.update-type {
+  margin: 0 0 9px;
+  color: #f4b942;
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+  font-size: .78rem;
+  font-weight: 800;
+}
+
+.featured-event h2 {
+  margin: 0 0 16px;
+  color: white;
+  font-size: clamp(1.8rem, 2.5vw, 2.5rem);
+  line-height: 1.15;
+}
+
+.featured-event-copy > p:not(.eyebrow),
+.event-details p {
+  color: white;
+  line-height: 1.6;
+}
+
+.event-details {
+  margin-bottom: 22px;
+}
+
+.event-details p {
+  margin: 7px 0;
+}
+
+.featured-event-image {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border-radius: 16px;
+  min-height: 270px;
+}
+
+.featured-event-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 270px;
+  object-fit: cover;
+}
+
+.event-image-label {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  padding: 10px 15px;
+  background: rgba(17,17,17,.82);
+  color: white;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: .85rem;
+}
+
+.ai-image-label {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+
+  padding: 4px 7px;
+  background: rgba(17, 17, 17, 0.65);
+  color: white;
+
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 0.65rem;
+  line-height: 1.2;
+
+  z-index: 2;
+}
+/* ---------- RESEARCH FOCUS ---------- */
+.research-focus {
+  background: #faf8f2;
+}
+
+.research-focus-grid {
+  max-width: 1240px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.focus-card {
+  min-height: 330px;
+  padding: 30px;
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0,0,0,.07);
+  display: flex;
+  flex-direction: column;
+}
+
+.focus-card-icon {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 22px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e6efec;
+  color: #006b4f;
+  font-size: 30px;
+}
+
+.focus-card h3,
+.update-card h3 {
+  color: #16324f;
+  margin: 0 0 12px;
+  font-size: 1.25rem;
+}
+
+.focus-card p,
+.update-card p {
+  color: #333;
+  line-height: 1.6;
+}
+
+.focus-card > a,
+.focus-card-body > a,
+.update-card a {
+  margin-top: auto;
+  color: #006b4f;
+  font-weight: 800;
+}
+
+.focus-card-image {
+  padding: 0;
+  overflow: hidden;
+}
+
+.focus-card-image > img {
+  width: 100%;
+  height: 165px;
+  object-fit: cover;
+  display: block;
+}
+
+.focus-card-body {
+  padding: 24px 28px 28px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+/* ---------- TEAM THUMBNAIL ---------- */
+.team-preview {
+  max-width: 1240px;
+  margin: 0 auto 58px;
+  padding: 30px 34px;
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0,0,0,.07);
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 35px;
+  align-items: center;
+}
+
+.team-preview-intro h2 {
+  margin: 0 0 10px;
+  color: #16324f;
+  font-size: 1.8rem;
+}
+
+.team-preview-intro p {
+  margin: 0 0 14px;
+  line-height: 1.55;
+}
+
+.team-preview .text-link {
+  color: #006b4f;
+  font-size: 1rem;
+}
+
+.team-preview-people {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.team-thumb {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  padding: 8px;
+}
+
+.team-thumb img {
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #f4b942;
+}
+
+.team-thumb span,
+.team-thumb strong,
+.team-thumb small {
+  display: block;
+}
+
+.team-thumb strong {
+  color: #16324f;
+  font-size: .95rem;
+}
+
+.team-thumb small {
+  margin-top: 4px;
+  color: #666;
+  font-size: .78rem;
+}
+
+  /* Working together */
+
+  .partnership-organisations-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .partnership-organisation:nth-child(2) {
+    border-right: none;
+  }
+
+  .partnership-organisation:nth-child(-n+2) {
+    border-bottom: 1px solid #e3dfd7;
+  }
+
+  .partnership-themes {
+    flex-wrap: wrap;
+  }
+
+  .partnership-theme {
+    width: 50%;
+  }
+
+  .partnership-theme:nth-child(2) {
+    border-right: none;
+  }
+
+/* ==========================================================
+   WORKING TOGETHER — MANCHESTER TO MONA
+========================================================== */
+
+.home-partnership {
+  background: #faf8f2;
+  border-top: 1px solid #ece8df;
+}
+
+
+/* ---------- HEADING ---------- */
+
+.partnership-heading {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 36px 6% 8px;
+
+  text-align: center;
+}
+
+.partnership-eyebrow {
+  margin: 0 0 10px;
+
+  color: #006B4F;
+
+  font-size: 0.8rem;
+  font-weight: 800;
+
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.partnership-heading h2 {
+  margin: 0 0 10px;
+
+  color: #16324f;
+
+  font-size: clamp(2rem, 3vw, 2.8rem);
+  line-height: 1.1;
+}
+
+.partnership-intro {
+  max-width: 650px;
+  margin: 0 auto;
+
+  color: #4d5964;
+
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+
+/* ---------- MAP ---------- */
+
+.partnership-map {
+  position: relative;
+
+  max-width: 850px;
+  margin: 0 auto;
+
+  padding: 5px 3% 22px;
+}
+
+.partnership-map img {
+  display: block;
+
+  width: 100%;
+  max-height: 330px;
+  height: auto;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+
+/* Message in centre of map */
+
+.partnership-map-message {
+  position: absolute;
+
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+
+  width: 280px;
+
+  padding: 14px 20px;
+
+  background: rgba(250, 248, 242, 0.92);
+
+  text-align: center;
+
+  border-radius: 8px;
+}
+
+.partnership-map-message span,
+.partnership-map-message strong {
+  display: block;
+}
+
+.partnership-map-message span {
+  margin-bottom: 5px;
+
+  color: #006B4F;
+
+  font-size: 0.72rem;
+  font-weight: 800;
+
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+.partnership-map-message strong {
+  color: #16324f;
+
+  font-size: 1rem;
+  line-height: 1.35;
+}
+
+
+/* ---------- PARTNER ORGANISATIONS ---------- */
+
+.partnership-organisations {
+  padding: 20px 6% 22px;
+
+  background: #fff;
+
+  border-top: 1px solid #e8e4dc;
+}
+
+.partnership-organisations-title {
+  margin: 0 0 16px;
+
+  color: #777;
+
+  text-align: center;
+
+  font-size: 0.72rem;
+  font-weight: 800;
+
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.partnership-organisations-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+
+/* Individual partner */
+
+.partnership-organisation {
+  min-height: 70px;
+
+  padding: 5px 22px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 15px;
+}
+
+.partnership-organisation:not(:last-child) {
+  border-right: 1px solid #e3dfd7;
+}
+
+.partnership-organisation img {
+  width: 60px;
+  height: 60px;
+
+  object-fit: contain;
+
+  flex-shrink: 0;
+}
+
+.partnership-organisation strong,
+.partnership-organisation span {
+  display: block;
+}
+
+.partnership-organisation strong {
+  margin-bottom: 4px;
+
+  color: #16324f;
+
+  font-size: 0.9rem;
+  line-height: 1.3;
+}
+
+.partnership-organisation span {
+  color: #666;
+
+  font-size: 0.75rem;
+  line-height: 1.35;
+}
+
+
+/* Temporary Christie symbol */
+
+.christie-logo {
+  width: 55px;
+  height: 55px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  color: #006B4F;
+
+  font-size: 2rem;
+}
+
+
+/* Temporary Jamaica clinical partner icon */
+
+.partner-people-icon {
+  width: 58px;
+
+  flex-shrink: 0;
+
+  color: #006B4F;
+
+  font-size: 0.85rem;
+  letter-spacing: -2px;
+
+  text-align: center;
+}
+
+
+/* ---------- BOTTOM THEMES ---------- */
+
+.partnership-themes {
+  padding: 18px 6%;
+
+  background: #006B4F;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.partnership-theme {
+  min-width: 0;
+
+  padding: 3px 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 11px;
+
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.partnership-theme:not(:last-child) {
+  border-right: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.partnership-theme-icon {
+  color: #FFD400;
+
+  font-size: 1.25rem;
+}
+/* ---------- LATEST UPDATES ---------- */
+.latest-updates {
+  background: #faf8f2;
+}
+
+.updates-grid {
+  max-width: 1240px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.update-card {
+  overflow: hidden;
+  background: white;
+  border-radius: 14px;
+  padding: 28px;
+  box-shadow: 0 6px 20px rgba(0,0,0,.07);
+  display: flex;
+  flex-direction: column;
+  min-height: 290px;
+}
+
+.update-card > img {
+  width: calc(100% + 56px);
+  height: 155px;
+  margin: -28px -28px 22px;
+  object-fit: cover;
+}
+
+.update-card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.updates-button-row {
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* ---------- GET INVOLVED STRIP ---------- */
+.home-get-involved {
+  padding: 34px 7%;
+  background: #d99a13;
+  color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+}
+
+.home-get-involved > div {
+  max-width: 760px;
+}
+
+.home-get-involved h2 {
+  margin: 0 0 6px;
+  color: #111;
+  font-size: 1.7rem;
+}
+
+.home-get-involved p {
+  margin: 0;
+  color: #111;
+  line-height: 1.5;
+}
+
+.home-get-involved .button.teal {
+  background: #004653;
+  white-space: nowrap;
+}
+
+/* ---------- SMALL POLISH ---------- */
+.home-hero .button,
+.featured-event .button,
+.home-get-involved .button,
+.updates-button-row .button {
+  transition: transform .2s ease, opacity .2s ease;
+}
+
+.home-hero .button:hover,
+.featured-event .button:hover,
+.home-get-involved .button:hover,
+.updates-button-row .button:hover {
+  transform: translateY(-2px);
+  opacity: .95;
+}
+
+/* ==========================================================
+   HOME RESPONSIVE
+========================================================== */
+@media (max-width: 1000px) {
+  .home-why-grid,
+  .research-focus-grid,
+  .updates-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .featured-event {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .featured-event-copy {
+    justify-self: stretch;
+    max-width: none;
+  }
+
+  .team-preview {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .home-section {
+    padding: 44px 6%;
+  }
+
+  .navbar {
+    padding: 20px 6%;
+  }
+
+  .home-hero {
+    min-height: 400px;
+    padding: 38px 6%;
+    background-position: 62% bottom;
+  }
+
+  .home-hero h1 {
+    font-size: 2.55rem;
+  }
+
+  .hero-intro {
+    font-size: 1rem;
+  }
+
+  .hero-buttons {
+    flex-wrap: wrap;
+  }
+
+  .home-why-grid,
+  .research-focus-grid,
+  .updates-grid,
+  .team-preview-people {
+    grid-template-columns: 1fr;
+  }
+
+  .home-why-card {
+    min-height: 0;
+  }
+
+  .featured-event {
+    padding: 46px 6%;
+  }
+
+  .featured-event-image,
+  .featured-event-image img {
+    min-height: 240px;
+  }
+
+  .team-preview {
+    margin: 0 6% 45px;
+    padding: 26px 22px;
+  }
+
+  .team-thumb {
+    flex-direction: row;
+    text-align: left;
+    justify-content: flex-start;
+  }
+
+  .team-thumb img {
+    width: 72px;
+    height: 72px;
+  }
+
+  .home-get-involved {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 32px 6%;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .home-hero .button {
+    width: 100%;
+  }
+}

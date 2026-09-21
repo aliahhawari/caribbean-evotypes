@@ -5,17 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Prostate Cancer Evotypes</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="home.css">
   <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
-
 <body>
 
-  <!-- Navigation bar -->
+  <!-- Navigation bar: existing links retained -->
   <nav class="navbar">
     <div class="logo">
-        <img class ="site-logo"
-                src="images/logo.png" 
-                alt="Carribean Evotypes logo">
+      <a href="index.html" aria-label="Caribbean Prostate Cancer Evotypes home">
+        <img class="site-logo" src="images/logo.png" alt="Caribbean Prostate Cancer Evotypes logo">
+      </a>
     </div>
 
     <div class="nav-links">
@@ -28,182 +28,330 @@
       <a href="contact/">Contact</a>
     </div>
 
-    <a href="get-involved.html" class="nav-button">Get Involved</a>
+    <a href="getinvolved/" class="nav-button">Get Involved</a>
   </nav>
 
-  <!-- Hero banner -->
-  <header class="hero">
+  <!-- Hero -->
+  <header class="hero home-hero">
     <div class="hero-text">
       <h1>
         Understanding prostate cancer in
         <span>African-Caribbean men</span>
         to improve care for future generations.
       </h1>
-
+      <p class="hero-intro">
+        Our research in Jamaica and the UK explores how prostate cancer develops in
+        African-Caribbean men, to improve outcomes for our community.
+      </p>
       <div class="hero-buttons">
-        <a href="research.html" class="button teal">About the Study</a>
-        <a href="get-involved.html" class="button gold">Get Involved</a>
+        <a href="research/" class="button teal">Learn About Our Research</a>
+        <a href="getinvolved/" class="button gold">Get Involved</a>
       </div>
     </div>
   </header>
 
   <!-- Why this study matters -->
-  <section class="why-wrapper">
-    <h2>Why this study matters</h2>
-        <div class="why-section">
-            
-
-                <div class="why-item">
-                <div class="icon">👥</div>
-                <h3>Higher risk</h3>
-                <p>African-Caribbean men are more likely to develop aggressive prostate cancer.</p>
-                </div>
-
-                <div class="why-item">
-                <div class="icon">?</div>
-                <h3>We need answers</h3>
-                <p>We still don’t fully understand why.</p>
-                </div>
-
-                <div class="why-item">
-                <div class="icon">🧬</div>
-                <h3>Too little genomic data</h3>
-                <p>Too few Black genomes have been studied.
-
-                </p>
-                </div>
-
-                <div class="why-item">
-                <div class="icon gold-icon">❤️</div>
-                <h3>This project aims to change that.</h3>
-                <p>More personalised treatment for everyone</p>
-                </div>
-        </div>
-    </section class="why-wrapper"> 
-  <!-- Collaboration section -->
-  <section class="collaboration">
-    <div class="section-title">
-      <h2>Working together</h2>
-      <p>A collaboration across the UK and Jamaica</p>
+  <section class="why-wrapper home-section">
+    <div class="home-section-heading">
+      <h2>Why this study matters</h2>
     </div>
 
-    <div class="partner-row">
-      <div class="partner">
-        <div class="partner-icon">
-            <img src="images/mcrc.jpg" alt="MCRC">
-        </div>
-        <h3>University of Manchester</h3>
-        <p>Manchester Cancer Research Centre</p>
-      </div>
+    <div class="why-section home-why-grid">
+      <article class="why-item home-why-card">
+        <div class="icon" aria-hidden="true">👥</div>
+        <h3>Higher risk</h3>
+        <p>African-Caribbean men are more likely to develop aggressive prostate cancer.</p>
+      </article>
 
-      <span class="arrow">→</span>
+      <article class="why-item home-why-card">
+        <div class="icon" aria-hidden="true">?</div>
+        <h3>Not enough answers</h3>
+        <p>Too little research has focused on how prostate cancer develops in our community.</p>
+      </article>
 
-      <div class="partner">
-        <div class="partner-icon">💙</div>
-        <h3>The Christie</h3>
-        <p>NHS Foundation Trust</p>
-      </div>
+      <article class="why-item home-why-card">
+        <div class="icon" aria-hidden="true">🧬</div>
+        <h3>Our approach</h3>
+        <p>We study tumour genomics alongside lifestyle and family history to understand why.</p>
+      </article>
 
-      <span class="arrow">→</span>
-
-      <div class="partner">
-        <div class="partner-icon">
-            <img src="images/UWIlogo.png" alt="UWI">
-        </div>
-        <h3>University of the West Indies, Mona</h3>
-      </div>
-
-      <span class="arrow">→</span>
-
-      <div class="partner">
-        <div class="partner-icon">🌴</div>
-        <h3>Partner hospitals and clinicians</h3>
-        <p>in Jamaica</p>
-      </div>
+      <article class="why-item home-why-card">
+        <div class="icon gold-icon" aria-hidden="true">♡</div>
+        <h3>Better outcomes</h3>
+        <p>Our goal is to build knowledge that can support better detection, treatment and care.</p>
+      </article>
     </div>
   </section>
 
-  <!-- Main content cards -->
-  <main class="card-section">
+  <!-- Working together -->
+<section class="home-partnership">
 
-    <!-- Team card -->
-    <section class="large-card">
-      <div class="card-header">
-        <h2>Meet the team</h2>
-        <a href="about.html">View all team →</a>
-      </div>
+  <!-- Heading -->
+  <div class="partnership-heading">
 
-      <div class="team-row">
-        <div class="person">
-          <img src="images/aliah.jpg" alt="Dr Aliah Hawari">
-          <h3>Dr Aliah Hawari</h3>
-          <p>Computational Biologist</p>
-          <a href="about.html">Read more →</a>
+    <p class="partnership-eyebrow">
+      Working together
+    </p>
+
+    <h2>From Manchester to Mona</h2>
+
+    <p class="partnership-intro">
+      A research partnership connecting people, expertise and communities
+      across the UK and Jamaica.
+    </p>
+
+  </div>
+
+
+  <!-- UK–Jamaica map -->
+  <div class="partnership-map">
+
+    <img
+      src="images/ukjamaicamap2.png"
+      alt="Map showing the research partnership between Manchester in the UK and Mona in Jamaica">
+
+    <div class="partnership-map-message">
+      <span>One shared research partnership</span>
+      <strong>Sharing knowledge and expertise</strong>
+    </div>
+
+  </div>
+
+
+  <!-- Partner organisations -->
+  <div class="partnership-organisations">
+
+    <p class="partnership-organisations-title">
+      Our research partnership
+    </p>
+
+    <div class="partnership-organisations-grid">
+
+      <!-- Manchester -->
+      <div class="partnership-organisation">
+
+        <img
+          src="images/mcrc.jpg"
+          alt="Manchester Cancer Research Centre">
+
+        <div>
+          <strong>University of Manchester</strong>
+          <span>Manchester Cancer Research Centre</span>
         </div>
 
-        <div class="person">
-          <img src="images/david.jpg" alt="Professor David Wedge">
-          <h3>Prof. David Wedge</h3>
-          <p>Principal Investigator</p>
-          <a href="about.html">Read more →</a>
-        </div>
-
-        <div class="person">
-          <img src="images/ashwin.jpg" alt="Dr. Ashwin Sachdeva">
-          <h3>Dr. Ashwin Sachdeva</h3>
-          <p>Clinical Lead</p>
-          <a href="about.html">Read more →</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Community card -->
-    <section class="large-card community-card">
-      <div>
-        <h2>Our community</h2>
-        <p>
-          We work closely with patients, families and community organisations
-          to make sure our research is meaningful and makes a difference.
-        </p>
       </div>
 
-      <img src="images/PPIE1.jpg" alt="Community meeting">
-    </section>
 
-    <!-- Get involved card -->
-    <section class="large-card get-involved-card">
-      <h2>Get involved</h2>
-      <p>There are many ways you can be part of our research.</p>
+      <!-- The Christie -->
+      <div class="partnership-organisation">
 
-      <ul>
-        <li>Patient or family member</li>
-        <li>Healthcare professional</li>
-        <li>Researcher</li>
-        <li>Community organisation</li>
-      </ul>
+        <div class="partner-text-logo christie-logo">
+          ♥
+        </div>
 
-      <a href="getinvolved.html" class="button gold">Register your interest</a>
-    </section>
+        <div>
+          <strong>The Christie</strong>
+          <span>NHS Foundation Trust</span>
+        </div>
 
-  </main>
+      </div>
 
-  <!-- Footer -->
+
+      <!-- UWI -->
+      <div class="partnership-organisation">
+
+        <img
+          src="images/UWIlogo.png"
+          alt="University of the West Indies">
+
+        <div>
+          <strong>University of the West Indies</strong>
+          <span>Mona, Jamaica</span>
+        </div>
+
+      </div>
+
+
+      <!-- Jamaica clinical partners -->
+      <div class="partnership-organisation">
+
+        <div class="partner-people-icon" aria-hidden="true">
+          ●●●
+        </div>
+
+        <div>
+          <strong>Partner hospitals &amp; clinicians</strong>
+          <span>Jamaica</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- Research in focus -->
+  <section class="research-focus home-section">
+    <div class="home-section-heading">
+      <h2>Our research in focus</h2>
+    </div>
+
+    <div class="research-focus-grid">
+      <article class="focus-card">
+        <div class="focus-card-icon" aria-hidden="true">🧬</div>
+        <h3>Tumour genomics</h3>
+        <p>We study prostate tumours to understand the different evolutionary pathways seen in African-Caribbean men.</p>
+        <a href="research/">Learn more →</a>
+      </article>
+
+      <article class="focus-card">
+        <div class="focus-card-icon" aria-hidden="true">▤</div>
+        <h3>Lifestyle &amp; family history</h3>
+        <p>We collect information about diet, lifestyle and family history and link this with biological information.</p>
+        <a href="research/">Learn more →</a>
+      </article>
+
+      <article class="focus-card focus-card-image">
+        <img src="images/PPIE1.jpg" alt="Community discussion about prostate cancer research">
+        <div class="focus-card-body">
+          <h3>Community at the heart</h3>
+          <p>We work with our community to shape the research and make sure our materials are clear and relevant.</p>
+          <a href="events/">Learn more →</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Featured upcoming event -->
+  <section class="featured-event home-section" aria-labelledby="upcoming-event-title">
+    <div class="featured-event-copy">
+      <p class="eyebrow">Upcoming event</p>
+      <h2 id="upcoming-event-title">Community &amp; Research Engagement Event</h2>
+      <div class="event-details">
+        <p><strong>Date:</strong> Sunday 11 October 2026</p>
+        <p><strong>Time:</strong> 3:00 pm–7:00 pm</p>
+        <p><strong>Venue:</strong> Heaton Mersey Village Cricket Club, Manchester</p>
+      </div>
+      <p>
+        Join us for an afternoon of talks, discussion and Q&amp;A about prostate cancer
+        research, with researchers, clinicians and community voices.
+      </p>
+      <a href="events/" class="button gold">Find Out More &amp; Register</a>
+    </div>
+
+    <a class="featured-event-image" href="events/" aria-label="View upcoming events">
+      <img src="images/community_conversation.png" alt="Community members taking part in a research discussion">
+      
+      <span class="event-image-label">Coming up</span>
+      <span class="ai-image-label">AI-generated image for illustrative purposes</span>
+    </a>
+  </section>
+
+  
+
+  <!-- Meet the team thumbnail -->
+  <section class="team-preview home-section">
+    <div class="team-preview-intro">
+      <h2>Meet the team</h2>
+      <p>A team of researchers, clinicians and collaborators working together across the UK and Jamaica.</p>
+      <a href="about.html" class="text-link">Meet the team →</a>
+    </div>
+
+    <div class="team-preview-people">
+      <a class="team-thumb" href="about.html">
+        <img src="images/aliah.jpg" alt="Dr Aliah Hawari">
+        <span><strong>Dr Aliah Hawari</strong><small>Lead Researcher</small><small>Manchester</small></span>
+      </a>
+      <a class="team-thumb" href="about.html">
+        <img src="images/david.jpg" alt="Professor David Wedge">
+        <span><strong>Prof. David Wedge</strong><small>Principal Investigator</small><small>Manchester</small></span>
+      </a>
+      <a class="team-thumb" href="about.html">
+        <img src="images/ashwin.jpg" alt="Dr Ashwin Sachdeva">
+        <span><strong>Dr Ashwin Sachdeva</strong><small>Clinical Lead</small><small>Manchester</small></span>
+      </a>
+      <a class="team-thumb" href="about.html">
+        <img src="images/Sasha-Wright.jpg" alt="Dr Sasha Gay-Wright">
+        <span><strong>Dr Sasha Gay-Wright</strong><small>Research Fellow</small><small>Jamaica</small></span>
+      </a>
+
+      <a class="team-thumb" href="about.html">
+        <img src="images/kimberley.jpg" alt="Dr Kimberley Wright">
+        <span><strong>Dr Kimberley Wright</strong><small>Research Fellow</small><small>Jamaica</small></span>
+      </a>
+
+      <a class="team-thumb" href="about.html">
+        <img src="images/aiken.jpeg" alt="Dr William Aiken">
+        <span><strong>Dr William Aiken</strong><small>Consultant Urologist</small><small>Jamaica</small></span>
+      </a>
+    </div>
+  </section>
+
+
+
+  <!-- Latest updates -->
+  <section class="latest-updates home-section">
+    <div class="home-section-heading">
+      <h2>Latest updates</h2>
+    </div>
+
+    <div class="updates-grid">
+      <article class="update-card">
+        <p class="update-type">Research update</p>
+        <h3>Recruitment continues in Manchester</h3>
+        <p>We are recruiting participants at The Christie as the UK part of the study continues.</p>
+        <a href="updates.html">Read more →</a>
+      </article>
+
+      <article class="update-card">
+        <p class="update-type">Research update</p>
+        <h3>Jamaica recruitment preparing to start</h3>
+        <p>Our Jamaica study has received ethics approval and the team is preparing for participant recruitment.</p>
+        <a href="updates.html">Read more →</a>
+      </article>
+
+      <article class="update-card">
+        <img src="images/PPIE1.jpg" alt="Community research engagement event">
+        <div class="update-card-body">
+          <p class="update-type">Community update</p>
+          <h3>Engaging with our community</h3>
+          <p>Community contributors are helping us review study materials and shape how we communicate our research.</p>
+          <a href="updates.html">Read more →</a>
+        </div>
+      </article>
+    </div>
+
+    <div class="updates-button-row">
+      <a href="updates.html" class="button teal">View all updates</a>
+    </div>
+  </section>
+
+  <!-- Get involved callout -->
+  <section class="home-get-involved">
+    <div>
+      <h2>Be part of the change</h2>
+      <p>Whether you want to take part in our research, attend an event or help spread the word, there are many ways to get involved.</p>
+    </div>
+    <a href="getinvolved/" class="button teal">Get Involved</a>
+  </section>
+
+  <!-- Footer: existing destinations retained -->
   <footer>
     <div class="footer-logo">
-              <img class ="site-logo"
-                src="images/logo.png" 
-                alt="Carribean Evotypes logo">
- 
+      <img class="site-logo" src="images/logo.png" alt="Caribbean Prostate Cancer Evotypes logo">
       <p>Better understanding. Better outcomes. Stronger together.</p>
     </div>
 
     <div>
       <h3>Quick links</h3>
       <a href="about.html">About Us</a>
-      <a href="research.html">Our Research</a>
-      <a href="getinvolved.html">Get Involved</a>
+      <a href="research/">Our Research</a>
+      <a href="getinvolved/">Get Involved</a>
+      <a href="events/">Events</a>
       <a href="updates.html">Updates</a>
-      <a href="contact.html">Contact</a>
+      <a href="contact/">Contact</a>
     </div>
 
     <div>
@@ -215,7 +363,7 @@
 
     <div>
       <h3>Contact</h3>
-      <p> aliah.hawari@manchester.ac.uk</p>
+      <p>aliah.hawari@manchester.ac.uk</p>
     </div>
   </footer>
 
