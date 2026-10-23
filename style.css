@@ -121,7 +121,7 @@ a {
       rgba(12, 45, 64, 0.85),
       rgba(12, 45, 64, 0.35)
     ),
-    url("images/hero-banner_new.png");
+    url("images/hero-banner-new.jpg");
 
   background-size: auto 150%;
   background-position: center bottom;
@@ -1994,7 +1994,278 @@ FINAL STRIP
   min-height: 75px;
 }
 
+.hidden-section {
+  display: none;
+}
 
+/* ==================================================
+   EVENTS TIMELINE
+================================================== */
+
+.events-timeline {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  max-width: 1200px;
+  margin-top: 45px;
+}
+
+
+/* Vertical timeline line */
+
+.events-timeline::before {
+  content: "";
+
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 92px;
+
+  width: 2px;
+
+  background: #d8d4ca;
+}
+
+
+/* ==================================================
+   INDIVIDUAL EVENT
+================================================== */
+.events-timeline .past-card {
+  position: relative;
+
+  display: grid;
+  grid-template-columns: 75px 34px 290px minmax(0, 1fr);
+
+  column-gap: 12px;
+  row-gap: 0;
+
+  align-items: start;
+
+  padding: 0 0 42px;
+
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+/* ==================================================
+   DATE
+================================================== */
+
+.timeline-date {
+  text-align: right;
+  line-height: 1.1;
+}
+
+.timeline-date strong {
+  display: block;
+
+  color: #0c6556;
+
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.timeline-date span {
+  display: block;
+
+  margin-top: 4px;
+
+  color: #333333;
+
+  font-size: 0.82rem;
+}
+
+
+/* ==================================================
+   TIMELINE DOT
+================================================== */
+
+.timeline-marker {
+  position: relative;
+  z-index: 2;
+
+  justify-self: center;
+
+  width: 16px;
+  height: 16px;
+
+  border: 4px solid #f7f4ec;
+  border-radius: 50%;
+
+  background: #0c6556;
+
+  box-sizing: content-box;
+}
+
+
+/* ==================================================
+   EVENT IMAGE
+================================================== */
+
+.timeline-image {
+  width: 290px;
+  height: 182px;
+
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.timeline-image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+
+/* ==================================================
+   EVENT TEXT
+================================================== */
+
+.events-timeline .past-card-content {
+  padding: 0;
+}
+
+.events-timeline .past-label {
+  position: static;
+  top: auto;
+  left: auto;
+  right: auto;
+
+  display: inline-block;
+  width: fit-content;
+
+  margin: 0 0 10px;
+  padding: 7px 16px;
+
+  background: #08745f;
+  color: #ffffff;
+
+  border-radius: 999px;
+
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.events-timeline .past-card-content h3 {
+  margin: 0 0 7px;
+
+  color: #0c6556;
+
+  font-size: 1.3rem;
+  line-height: 1.15;
+}
+
+.events-timeline .past-card-content {
+  position: static;
+
+  display: block;
+
+  width: auto;
+  max-width: none;
+  min-height: 0;
+
+  margin: 0;
+  padding: 0 0 0 8px;
+
+  align-self: start;
+}
+
+.events-timeline .event-link {
+  color: #0c6556;
+  font-weight: 700;
+}
+
+@media (max-width: 900px) {
+
+  .events-timeline::before {
+    left: 72px;
+  }
+
+}
+
+@media (max-width: 650px) {
+
+  .events-timeline {
+    margin-top: 30px;
+  }
+
+  .events-timeline::before {
+    left: 10px;
+  }
+
+  .events-timeline .past-card {
+    display: grid;
+
+    grid-template-columns: 22px minmax(0, 1fr);
+    gap: 8px 14px;
+
+    padding-bottom: 42px;
+  }
+
+
+  /* Timeline dot */
+
+  .timeline-marker {
+    grid-column: 1;
+    grid-row: 1;
+
+    width: 12px;
+    height: 12px;
+
+    margin-top: 3px;
+  }
+
+
+  /* Date */
+
+  .timeline-date {
+    grid-column: 2;
+    grid-row: 1;
+
+    text-align: left;
+  }
+
+  .timeline-date strong,
+  .timeline-date span {
+    display: inline;
+  }
+
+  .timeline-date span {
+    margin-left: 5px;
+  }
+
+
+  /* Photo */
+
+  .timeline-image {
+    grid-column: 2;
+    grid-row: 2;
+
+    width: 100%;
+    height: 190px;
+
+    margin-top: 8px;
+  }
+
+
+  /* Text */
+
+  .events-timeline .past-card-content {
+    grid-column: 2;
+    grid-row: 3;
+
+    padding-top: 8px;
+  }
+
+}
 /* ==================================================
    PAST EVENTS
 ================================================== */
@@ -2049,8 +2320,6 @@ FINAL STRIP
 
   display: flex;
   flex-direction: column;
-
-  min-height: 300px;
 }
 
 
@@ -2092,6 +2361,19 @@ FINAL STRIP
   line-height: 1.6;
 }
 
+.events-timeline .event-link {
+  display: inline-block;
+
+  width: fit-content;
+
+  margin-top: 8px;
+  padding-top: 0;
+
+  border-top: 0;
+
+  color: #0c6556;
+  font-weight: 700;
+}
 
 /* ---------- LINKS ---------- */
 
@@ -2245,10 +2527,10 @@ FINAL STRIP
 
 /* Shared page hero banner */
 .hero-banner {
-  min-height: 430px;
+  min-height: 300px;
   display: flex;
   align-items: center;
-  padding: 60px 8%;
+  padding: 40px 6%;
   box-sizing: border-box;
 
   background-size: cover;
@@ -2258,34 +2540,34 @@ FINAL STRIP
 
 .hero-content {
   width: 100%;
-  max-width: 780px;
+  max-width: 680px;
 }
 
 .hero-content h1 {
   margin: 0;
 
   color: #f5b800;
-  font-size: clamp(5rem, 10vw, 10rem);
+  font-size: clamp(3rem, 5vw, 4.8rem);
   font-weight: 900;
-  line-height: 0.85;
-  letter-spacing: -0.04em;
+  line-height: 0.95;
+  letter-spacing: -0.03em;
   text-transform: uppercase;
 }
 
 .hero-line {
-  width: 80px;
-  height: 5px;
-  margin: 34px 0 22px;
+  width: 65px;
+  height: 4px;
+  margin: 22px 0 18px;
 
   background-color: #f5b800;
 }
 
 .hero-content p {
-  max-width: 680px;
+  max-width: 650px;
   margin: 0;
 
   color: #ffffff;
-  font-size: 1.3rem;
+  font-size: 1.08rem;
   line-height: 1.55;
 }
 
