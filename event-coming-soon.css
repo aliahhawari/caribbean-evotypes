@@ -1,0 +1,370 @@
+/* ==================================================
+   EVENT COMING SOON PAGE
+   ================================================== */
+
+.event-coming-page {
+  position: relative;
+  overflow: hidden;
+
+  min-height: 620px;
+  padding: 90px 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #080b0d;
+  color: #ffffff;
+}
+
+
+/* ==================================================
+   SUBTLE BACKGROUND EFFECT
+   ================================================== */
+
+.event-coming-page::before {
+  content: "";
+
+  position: absolute;
+  top: -200px;
+  right: -180px;
+
+  width: 650px;
+  height: 650px;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(171, 39, 61, 0.16) 0%,
+      rgba(171, 39, 61, 0.06) 38%,
+      transparent 70%
+    );
+
+  pointer-events: none;
+}
+
+
+/* Additional subtle glow on left */
+
+.event-coming-page::after {
+  content: "";
+
+  position: absolute;
+  bottom: -300px;
+  left: -250px;
+
+  width: 650px;
+  height: 650px;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(255, 255, 255, 0.035) 0%,
+      transparent 65%
+    );
+
+  pointer-events: none;
+}
+
+
+/* ==================================================
+   MAIN CONTENT
+   ================================================== */
+
+.event-coming-content {
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+  max-width: 800px;
+
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+
+/* ==================================================
+   SMALL PAGE STATUS
+   ================================================== */
+
+.event-coming-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  margin-bottom: 30px;
+  padding: 8px 17px;
+
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 50px;
+
+  background: rgba(255, 255, 255, 0.025);
+
+  color: #d3d5d7;
+
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+
+.event-coming-dot {
+  display: block;
+
+  width: 8px;
+  height: 8px;
+
+  border-radius: 50%;
+
+  background: #b52b44;
+}
+
+
+/* ==================================================
+   HEADING
+   ================================================== */
+
+.event-coming-content h1 {
+  max-width: 760px;
+
+  margin: 0 auto 26px;
+
+  color: #ffffff;
+
+  font-size: clamp(40px, 6vw, 66px);
+  font-weight: 700;
+  line-height: 1.08;
+
+  letter-spacing: -0.035em;
+}
+
+
+/* ==================================================
+   INTRO TEXT
+   ================================================== */
+
+.event-coming-intro {
+  max-width: 650px;
+
+  margin: 0 auto;
+
+  color: #c7cacc;
+
+  font-size: 19px;
+  line-height: 1.7;
+}
+
+
+.event-coming-second {
+  margin-top: 5px;
+}
+
+
+/* ==================================================
+   CONTENT COMING SOON LABELS
+   ================================================== */
+
+.coming-items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  gap: 12px;
+
+  margin: 38px auto 0;
+}
+
+
+.coming-item {
+  padding: 10px 18px;
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+
+  background: rgba(255, 255, 255, 0.045);
+
+  color: #e2e4e5;
+
+  font-size: 14px;
+  font-weight: 500;
+}
+
+
+/* ==================================================
+   NAVIGATION BUTTONS
+   ================================================== */
+
+.event-coming-nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  gap: 14px;
+
+  margin-top: 44px;
+}
+
+
+.event-coming-nav a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 155px;
+
+  padding: 13px 22px;
+
+  border-radius: 6px;
+
+  text-decoration: none;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+
+.event-coming-nav a:hover {
+  transform: translateY(-2px);
+}
+
+
+/* Primary Home button */
+
+.event-home-button {
+  border: 1px solid #a9273d;
+
+  background: #a9273d;
+
+  color: #ffffff;
+}
+
+
+.event-home-button:hover {
+  border-color: #c3324d;
+
+  background: #c3324d;
+}
+
+
+/* Secondary buttons */
+
+.event-secondary-button {
+  border: 1px solid rgba(255, 255, 255, 0.25);
+
+  background: transparent;
+
+  color: #ffffff;
+}
+
+
+.event-secondary-button:hover {
+  border-color: rgba(255, 255, 255, 0.45);
+
+  background: rgba(255, 255, 255, 0.07);
+}
+
+
+/* ==================================================
+   BOTTOM MESSAGE
+   ================================================== */
+
+.event-coming-note {
+  margin: 32px 0 0;
+
+  color: #8e9498;
+
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+
+/* ==================================================
+   TABLET
+   ================================================== */
+
+@media (max-width: 800px) {
+
+  .event-coming-page {
+    min-height: 580px;
+
+    padding: 75px 25px;
+  }
+
+  .event-coming-content h1 {
+    font-size: clamp(38px, 8vw, 54px);
+  }
+
+}
+
+
+/* ==================================================
+   MOBILE
+   ================================================== */
+
+@media (max-width: 600px) {
+
+  .event-coming-page {
+    min-height: 540px;
+
+    padding: 65px 20px;
+  }
+
+
+  .event-coming-label {
+    margin-bottom: 24px;
+
+    font-size: 13px;
+  }
+
+
+  .event-coming-content h1 {
+    margin-bottom: 22px;
+
+    font-size: 38px;
+    line-height: 1.12;
+  }
+
+
+  .event-coming-intro {
+    font-size: 17px;
+    line-height: 1.65;
+  }
+
+
+  .coming-items {
+    gap: 9px;
+
+    margin-top: 30px;
+  }
+
+
+  .coming-item {
+    padding: 9px 13px;
+
+    font-size: 13px;
+  }
+
+
+  .event-coming-nav {
+    flex-direction: column;
+
+    margin-top: 38px;
+  }
+
+
+  .event-coming-nav a {
+    width: 100%;
+  }
+
+
+  .event-coming-note {
+    margin-top: 28px;
+  }
+
+}
