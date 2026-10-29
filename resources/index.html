@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prostate Cancer Information | Prostate Cancer Evotypes</title>
+
+  <!-- Existing site-wide styles -->
+  <link rel="stylesheet" href="../style.css">
+
+  <!-- Styles only for this page -->
+  <link rel="stylesheet" href="../resources-info.css">
+</head>
+
+<body>
+
+  <!-- ==================================================
+       NAVIGATION
+       Matches the structure used on your Events page.
+  =================================================== -->
+  <nav class="navbar">
+    <div class="logo">
+      <img class="site-logo" src="../images/logo.png" alt="Prostate Cancer Evotypes logo">
+    </div>
+
+    <div class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="../about.html">About Us</a>
+      <a href="../research/">Our Research</a>
+      <a href="../getinvolved/">Get Involved</a>
+      <a href="../events/">Events</a>
+      <a href="../updates.html">Updates</a>
+      <a href="./" class="active">Resources</a>
+      <a href="../../contact/">Contact</a>
+    </div>
+
+    <a href="../getinvolved.html" class="nav-button">Get Involved</a>
+  </nav>
+
+
+  <!-- ==================================================
+       FIXED HERO
+       This remains unchanged when a topic tab is selected.
+       Replace the background image in resources-info.css.
+  =================================================== -->
+  <header class="resource-hero">
+    
+    <div class="resource-hero-photo">
+      <img
+        src="../images/resources-prostate-hero.jpg"
+        alt="Members of the prostate cancer community in conversation"
+      >
+    </div>
+
+    <div class="resource-hero-content">
+      <nav class="resource-breadcrumb" aria-label="Breadcrumb">
+        <a href="../index.html">Home</a>
+        <span>›</span>
+        <a href="./">Resources</a>
+        <span>›</span>
+        <span>Prostate cancer information</span>
+      </nav>
+
+      <span class="resource-kicker">TRUSTED HEALTH INFORMATION</span>
+
+      <h1>Prostate cancer information</h1>
+
+      <p>
+        Easy-to-understand information about prostate cancer, with links to
+        trusted health and cancer organisations.
+      </p>
+    </div>
+  </header>
+
+
+  <main class="resource-page">
+
+    <!-- ==================================================
+         TOPIC NAVIGATION
+         This also remains on screen. JavaScript changes only
+         the information panel below it.
+    =================================================== -->
+    <section class="topic-navigation" aria-label="Prostate cancer information topics">
+      <div class="topic-navigation-inner" role="tablist" aria-label="Choose a topic">
+
+        <button class="topic-tab active"
+                type="button"
+                role="tab"
+                aria-selected="true"
+                aria-controls="panel-about"
+                id="tab-about"
+                data-topic="about">
+          <span class="topic-icon" aria-hidden="true">◫</span>
+          <span>About prostate cancer</span>
+        </button>
+
+        <button class="topic-tab"
+                type="button"
+                role="tab"
+                aria-selected="false"
+                aria-controls="panel-risk"
+                id="tab-risk"
+                data-topic="risk">
+          <span class="topic-icon" aria-hidden="true">●</span>
+          <span>Risk &amp; symptoms</span>
+        </button>
+
+        <button class="topic-tab"
+                type="button"
+                role="tab"
+                aria-selected="false"
+                aria-controls="panel-psa"
+                id="tab-psa"
+                data-topic="psa">
+          <span class="topic-icon" aria-hidden="true">▯</span>
+          <span>PSA testing</span>
+        </button>
+
+        <button class="topic-tab"
+                type="button"
+                role="tab"
+                aria-selected="false"
+                aria-controls="panel-diagnosis"
+                id="tab-diagnosis"
+                data-topic="diagnosis">
+          <span class="topic-icon" aria-hidden="true">⌕</span>
+          <span>Diagnosis</span>
+        </button>
+
+        <button class="topic-tab"
+                type="button"
+                role="tab"
+                aria-selected="false"
+                aria-controls="panel-treatment"
+                id="tab-treatment"
+                data-topic="treatment">
+          <span class="topic-icon" aria-hidden="true">♥</span>
+          <span>Treatment</span>
+        </button>
+
+        <button class="topic-tab"
+                type="button"
+                role="tab"
+                aria-selected="false"
+                aria-controls="panel-living"
+                id="tab-living"
+                data-topic="living">
+          <span class="topic-icon" aria-hidden="true">◎</span>
+          <span>Living with prostate cancer</span>
+        </button>
+
+      </div>
+    </section>
+
+
+    <!-- ==================================================
+         CHANGING CONTENT AREA
+    =================================================== -->
+    <div class="resource-content-shell">
+
+
+      <!-- ==================================================
+           ABOUT PROSTATE CANCER
+      =================================================== -->
+      <section class="topic-panel active"
+               id="panel-about"
+               role="tabpanel"
+               aria-labelledby="tab-about"
+               data-panel="about">
+
+        <div class="section-heading">
+          <span class="eyebrow">ABOUT PROSTATE CANCER</span>
+          <h2>What is prostate cancer?</h2>
+        </div>
+
+        <div class="intro-grid">
+          <div class="intro-copy">
+            <p class="lead">
+              The prostate is a small gland that sits below the bladder and
+              surrounds the tube that carries urine out of the body.
+              Prostate cancer develops when cells in the prostate begin to
+              grow in an uncontrolled way.
+            </p>
+
+            <p>
+              Prostate cancers do not all behave in the same way. Some grow
+              slowly and may never cause problems, while others can grow more
+              quickly and may need treatment.
+            </p>
+
+            <p class="source-note">
+              This page gives a short introduction only. Use the trusted
+              resources below for detailed and up-to-date health information.
+            </p>
+          </div>
+
+          <aside class="quick-fact-card">
+            <span class="quick-fact-label">GOOD TO KNOW</span>
+            <h3>Early prostate cancer may not cause symptoms</h3>
+            <p>
+              Knowing your individual risk can be important even when you feel well.
+            </p>
+            <a href="https://prostatecanceruk.org/prostate-information-and-support/risk-and-symptoms"
+               target="_blank" rel="noopener noreferrer">
+              Learn about risk at Prostate Cancer UK <span aria-hidden="true">↗</span>
+            </a>
+          </aside>
+        </div>
+
+        <div class="black-men-callout">
+          <div class="callout-number">1 in 4</div>
+          <div>
+            <span class="eyebrow">WHY THIS MATTERS FOR BLACK MEN</span>
+            <h3>Black men have a higher risk of prostate cancer</h3>
+            <p>
+              In the UK, Prostate Cancer UK estimates that 1 in 4 Black men
+              will be diagnosed with prostate cancer in their lifetime.
+              Age and family history also affect risk.
+            </p>
+            <a href="https://prostatecanceruk.org/prostate-information-and-support/risk-and-symptoms"
+               target="_blank" rel="noopener noreferrer">
+              Read about risk and symptoms <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="trusted-heading">
+          <div>
+            <span class="eyebrow">FURTHER READING</span>
+            <h2>Trusted information</h2>
+            <p>
+              These links take you to established health and prostate cancer
+              organisations. They open in a new tab.
+            </p>
+          </div>
+          <div class="trusted-badge">✓ Trusted external sources</div>
+        </div>
+
+        <div class="trusted-resource-grid">
+
+          <article class="trusted-resource-card nhs-card">
+            <div class="resource-card-top">
+              <span class="organisation-name">NHS inform</span>
+              <span class="external-icon" aria-hidden="true">↗</span>
+            </div>
+            <h3>Prostate cancer</h3>
+            <p>
+              Information about prostate cancer, symptoms, diagnosis,
+              treatment and living with prostate cancer.
+            </p>
+            <a href="https://www.nhsinform.scot/?illnesses=prostate-cancer"
+               target="_blank" rel="noopener noreferrer">
+              Visit NHS inform <span aria-hidden="true">→</span>
+            </a>
+          </article>
+
+          <article class="trusted-resource-card pcuk-card">
+            <div class="resource-card-top">
+              <span class="organisation-name">Prostate Cancer UK</span>
+              <span class="external-icon" aria-hidden="true">↗</span>
+            </div>
+            <h3>About prostate cancer</h3>
+            <p>
+              Clear information about the prostate, prostate cancer,
+              risk, symptoms and support.
+            </p>
+            <a href="https://prostatecanceruk.org/prostate-information-and-support/risk-and-symptoms/about-prostate-cancer"
+               target="_blank" rel="noopener noreferrer">
+              Visit Prostate Cancer UK <span aria-hidden="true">→</span>
+            </a>
+          </article>
+
+          <article class="trusted-resource-card pcr-card">
+            <div class="resource-card-top">
+              <span class="organisation-name">Prostate Cancer Research</span>
+              <span class="external-icon" aria-hidden="true">↗</span>
+            </div>
+            <h3>Symptoms and risk factors</h3>
+            <p>
+              Information and educational resources about prostate cancer,
+              risk, symptoms, testing and diagnosis.
+            </p>
+            <a href="https://www.prostate-cancer-research.org.uk/testing-and-diagnosis/symptoms-and-risk-factors/"
+               target="_blank" rel="noopener noreferrer">
+              Visit Prostate Cancer Research <span aria-hidden="true">→</span>
+            </a>
+          </article>
+
+        </div>
+      </section>
+
+
+      <!-- ==================================================
+           RISK & SYMPTOMS
+      =================================================== -->
+      <section class="topic-panel"
+               id="panel-risk"
+               role="tabpanel"
+               aria-labelledby="tab-risk"
+               data-panel="risk"
+               hidden>
+
+        <div class="section-heading">
+          <span class="eyebrow">RISK &amp; SYMPTOMS</span>
+          <h2>Understanding your risk</h2>
+          <p class="lead">
+            Prostate cancer can affect anyone with a prostate, but some people
+            have a higher risk. Age, ethnicity and family history are important
+            factors to discuss with a healthcare professional.
+          </p>
+        </div>
+
+        <div class="info-card-grid three-columns">
+          <article class="info-card">
+            <span class="info-card-number">01</span>
+            <h3>Age</h3>
+            <p>The risk of prostate cancer increases as you get older.</p>
+          </article>
+
+          <article class="info-card">
+            <span class="info-card-number">02</span>
+            <h3>Black ethnicity</h3>
+            <p>Black men have a higher lifetime risk of developing prostate cancer.</p>
+          </article>
+
+          <article class="info-card">
+            <span class="info-card-number">03</span>
+            <h3>Family history</h3>
+            <p>Your risk may be higher if close relatives have had prostate cancer.</p>
+          </article>
+        </div>
+
+        <div class="important-callout">
+          <strong>Prostate cancer often has no symptoms in its early stages.</strong>
+          <p>
+            Urinary symptoms can also be caused by common non-cancerous
+            prostate conditions. If you are concerned about symptoms or your
+            risk, speak to your GP or another healthcare professional.
+          </p>
+        </div>
+
+        <h2 class="subsection-title">Read more from trusted organisations</h2>
+
+        <div class="link-list">
+          <a href="https://prostatecanceruk.org/prostate-information-and-support/risk-and-symptoms"
+             target="_blank" rel="noopener noreferrer">
+            <span><strong>Prostate Cancer UK</strong><small>Risk, symptoms and information for Black men</small></span>
+            <span>↗</span>
+          </a>
+
+          <a href="https://www.prostate-cancer-research.org.uk/testing-and-diagnosis/symptoms-and-risk-factors/"
+             target="_blank" rel="noopener noreferrer">
+            <span><strong>Prostate Cancer Research</strong><small>Symptoms and risk factors</small></span>
+            <span>↗</span>
+          </a>
+
+          <a href="https://www.nhsinform.scot/?illnesses=prostate-cancer"
+             target="_blank" rel="noopener noreferrer">
+            <span><strong>NHS inform</strong><small>Prostate cancer symptoms and risk information</small></span>
+            <span>↗</span>
+          </a>
+        </div>
+      </section>
+
+
+      <!-- ==================================================
+           PSA TESTING
+      =================================================== -->
+      <section class="topic-panel"
+               id="panel-psa"
+               role="tabpanel"
+               aria-labelledby="tab-psa"
+               data-panel="psa"
+               hidden>
+
+        <div class="section-heading">
+          <span class="eyebrow">PSA TESTING</span>
+          <h2>What is a PSA test?</h2>
+          <p class="lead">
+            A PSA test is a blood test that measures the level of
+            prostate-specific antigen (PSA) in your blood. A raised PSA can
+            have several causes and does not automatically mean that you have
+            prostate cancer.
+          </p>
+        </div>
+
+        <div class="two-column-feature">
+          <article class="feature-box">
+            <h3>What can affect PSA?</h3>
+            <p>
+              PSA levels can be affected by prostate cancer as well as
+              non-cancerous prostate conditions and other factors.
+            </p>
+          </article>
+
+          <article class="feature-box">
+            <h3>Should I have a PSA test?</h3>
+            <p>
+              The benefits and limitations of PSA testing are worth discussing
+              with a healthcare professional, particularly if you are at
+              increased risk.
+            </p>
+          </article>
+        </div>
+
+        <h2 class="subsection-title">Trusted information about PSA testing</h2>
+
+        <div class="link-list">
+          <a href="https://prostatecanceruk.org/prostate-information-and-support/prostate-tests/psa-blood-test"
+             target="_blank" rel="noopener noreferrer">
+            <span><strong>Prostate Cancer UK</strong><small>PSA blood test information</small></span>
+            <span>↗</span>
+          </a>
+
+          <a href="https://www.nhsinform.scot/?illnesses=prostate-cancer"
+             target="_blank" rel="noopener noreferrer">
+            <span><strong>NHS inform</strong><small>PSA testing as part of prostate cancer diagnosis</small></span>
+            <span>↗</span>
+          </a>
+        </div>
+      </section>
+
+
+      <!-- ==================================================
+           DIAGNOSIS
+      =================================================== -->
+      <section class="topic-panel"
+               id="panel-diagnosis"
+               role="tabpanel"
+               aria-labelledby="tab-diagnosis"
+               data-panel="diagnosis"
+               hidden>
+
+        <div class="section-heading">
+          <span class="eyebrow">TESTS &amp; DIAGNOSIS</span>
+          <h2>How is prostate cancer investigated?</h2>
+          <p class="lead">
+            If prostate cancer is suspected, healthcare professionals may use
+            a combination of tests and examinations. Which tests are needed
+            depends on your individual circumstances.
+          </p>
+        </div>
+
+        <div class="diagnosis-steps">
+          <article><span>1</span><div><h3>Initial assessment</h3><p>Your doctor may discuss your symptoms, risk and general health.</p></div></article>
+          <article><span>2</span><div><h3>PSA blood test</h3><p>A blood test can measure the amount of PSA in your blood.</p></div></article>
+          <article><span>3</span><div><h3>Examination</h3><p>A clinician may discuss or perform a prostate examination depending on your circumstances.</p></div></article>
+          <article><span>4</span><div><h3>Further tests</h3><p>Further assessment can include MRI and, where appropriate, a prostate biopsy.</p></div></article>
+        </div>
+
+        <h2 class="subsection-title">Trusted information about diagnosis</h2>
+
+        <div class="link-list">
+          <a href="https://www.nhsinform.scot/?illnesses=prostate-cancer"
+             target="_blank" rel="noopener noreferrer">
+            <span><strong>NHS inform</strong><small>Diagnosis, rectal examination, PSA, MRI and biopsy</small></span>
+            <span>↗</span>
+          </a>
+
+          <a href="https://prostatecanceruk.org/prostate-information-and-support/prostate-tests"
+             target="_blank" rel="noopener noreferrer">
+            <span><strong>Prostate Cancer UK</strong><small>Tests for prostate cancer and prostate problems</small></span>
+            <span>↗</span>
+          </a>
+
+          <a href="https://www.prostate-cancer-research.org.uk/testing-and-diagnosis/"
+             target="_blank" rel="noopener noreferrer">
+            <span><strong>Prostate Cancer Research</strong><small>Testing and diagnosis information</small></span>
+            <span>↗</span>
+          </a>
+        </div>
+      </section>
+
+
+      <!-- ==================================================
+           TREATMENT
+      =================================================== -->
+      <section class="topic-panel"
+               id="panel-treatment"
+               role="tabpanel"
+               aria-labelledby="tab-treatment"
+               data-panel="treatment"
+               hidden>
+
+        <div class="section-heading">
+          <span class="eyebrow">TREATMENT</span>
+          <h2>Treatment for prostate cancer</h2>
+          <p class="lead">
+            There are different ways to manage and treat prostate cancer.
+            Treatment depends on factors including the type and stage of the
+            cancer, your general health and your preferences.
+          </p>
+        </div>
+
+        <div class="info-card-grid">
+          <article class="info-card"><h3>Monitoring</h3><p>Some prostate cancers can be monitored rather than treated immediately.</p></article>
+          <article class="info-card"><h3>Surgery</h3><p>Surgery may be an option for some people with prostate cancer.</p></article>
+          <article class="info-card"><h3>Radiotherapy</h3><p>Radiotherapy uses radiation to destroy cancer cells.</p></article>
+          <article class="info-card"><h3>Drug treatments</h3><p>Hormone therapy, chemotherapy and other medicines may be used in some situations.</p></article>
+        </div>
+
+        <div class="important-callout">
+          <strong>Your treatment is individual to you.</strong>
+          <p>
+            Your clinical team can explain which options are appropriate for
+            you and discuss the potential benefits and side effects.
+          </p>
+        </div>
+
+        <h2 class="subsection-title">Trusted treatment information</h2>
+
+        <div class="link-list">
+          <a href="https://prostatecanceruk.org/prostate-information-and-support/treatments"
+             target="_blank" rel="noopener noreferrer">
+            <span><strong>Prostate Cancer UK</strong><small>Prostate cancer treatments</small></span>
+            <span>↗</span>
+          </a>
+
+          <a href="https://www.nhsinform.scot/?illnesses=prostate-cancer"
+             target="_blank" rel="noopener noreferrer">
+            <span><strong>NHS inform</strong><small>Prostate cancer treatment information</small></span>
+            <span>↗</span>
+          </a>
+        </div>
+      </section>
+
+
+      <!-- ==================================================
+           LIVING WITH PROSTATE CANCER
+      =================================================== -->
+      <section class="topic-panel"
+               id="panel-living"
+               role="tabpanel"
+               aria-labelledby="tab-living"
+               data-panel="living"
+               hidden>
+
+        <div class="section-heading">
+          <span class="eyebrow">LIVING WITH PROSTATE CANCER</span>
+          <h2>Information and support beyond treatment</h2>
+          <p class="lead">
+            Prostate cancer and its treatments can affect physical health,
+            emotional wellbeing, relationships and everyday life. Support is
+            available for people with prostate cancer and those close to them.
+          </p>
+        </div>
+
+        <div class="info-card-grid three-columns">
+          <article class="info-card"><h3>Side effects</h3><p>Find information about managing treatment side effects and recovery.</p></article>
+          <article class="info-card"><h3>Emotional wellbeing</h3><p>Support can help with the emotional impact of diagnosis and treatment.</p></article>
+          <article class="info-card"><h3>Family &amp; relationships</h3><p>Information and support is also available for partners, family and friends.</p></article>
+        </div>
+
+        <h2 class="subsection-title">Trusted information and support</h2>
+
+        <div class="link-list">
+          <a href="https://prostatecanceruk.org/prostate-information-and-support/living-with-prostate-cancer"
+             target="_blank" rel="noopener noreferrer">
+            <span><strong>Prostate Cancer UK</strong><small>Living with prostate cancer</small></span>
+            <span>↗</span>
+          </a>
+
+          <a href="https://www.nhsinform.scot/?illnesses=prostate-cancer"
+             target="_blank" rel="noopener noreferrer">
+            <span><strong>NHS inform</strong><small>After treatment, wellbeing and recovery</small></span>
+            <span>↗</span>
+          </a>
+        </div>
+      </section>
+
+
+      <!-- ==================================================
+           MEDICAL INFORMATION NOTICE
+           Keep this visible for every topic.
+      =================================================== -->
+      <aside class="medical-notice" aria-label="Medical information notice">
+        <div class="medical-notice-icon" aria-hidden="true">i</div>
+
+        <div class="medical-notice-copy">
+          <strong>Medical information</strong>
+          <p>
+            The information and links on this page are provided for general
+            information only and are not a substitute for medical advice.
+            If you are concerned about prostate cancer or your health, please
+            speak to your GP or another healthcare professional.
+          </p>
+        </div>
+
+        <div class="clinical-review">
+          <span>Clinical review</span>
+          <strong>Add reviewer name / role here</strong>
+          <small>Last reviewed: add date</small>
+        </div>
+      </aside>
+
+    </div>
+  </main>
+
+
+  <!-- ==================================================
+       TAB INTERACTION
+       No separate JS file is required. This changes only
+       the content below the tabs and keeps the hero fixed.
+  =================================================== -->
+  <script>
+    const topicTabs = document.querySelectorAll(".topic-tab");
+    const topicPanels = document.querySelectorAll(".topic-panel");
+
+    function showTopic(topic, updateHash = true) {
+      const selectedTab = document.querySelector(
+        `.topic-tab[data-topic="${topic}"]`
+      );
+
+      const selectedPanel = document.querySelector(
+        `.topic-panel[data-panel="${topic}"]`
+      );
+
+      if (!selectedTab || !selectedPanel) return;
+
+      topicTabs.forEach((tab) => {
+        const isActive = tab === selectedTab;
+        tab.classList.toggle("active", isActive);
+        tab.setAttribute("aria-selected", isActive ? "true" : "false");
+        tab.setAttribute("tabindex", isActive ? "0" : "-1");
+      });
+
+      topicPanels.forEach((panel) => {
+        const isActive = panel === selectedPanel;
+        panel.classList.toggle("active", isActive);
+        panel.hidden = !isActive;
+      });
+
+      if (updateHash) {
+        history.replaceState(null, "", `#${topic}`);
+      }
+    }
+
+    topicTabs.forEach((tab, index) => {
+      tab.addEventListener("click", () => {
+        showTopic(tab.dataset.topic);
+      });
+
+      tab.addEventListener("keydown", (event) => {
+        if (event.key !== "ArrowRight" && event.key !== "ArrowLeft") return;
+
+        event.preventDefault();
+
+        const direction = event.key === "ArrowRight" ? 1 : -1;
+        const nextIndex =
+          (index + direction + topicTabs.length) % topicTabs.length;
+
+        topicTabs[nextIndex].focus();
+        showTopic(topicTabs[nextIndex].dataset.topic);
+      });
+    });
+
+    const requestedTopic = window.location.hash.replace("#", "");
+    const validTopics = [...topicTabs].map((tab) => tab.dataset.topic);
+
+    if (validTopics.includes(requestedTopic)) {
+      showTopic(requestedTopic, false);
+    } else {
+      showTopic("about", false);
+    }
+  </script>
+
+</body>
+</html>

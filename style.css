@@ -1508,26 +1508,98 @@ FINAL STRIP
   color: white;
 }
 
-.involved-hero {
-  min-height: 420px;
-  background:
-     linear-gradient(
-      90deg,
-            rgba(0,0,0,1) 0%,
-            rgba(0,0,0,.90) 15%,
-            rgba(0,0,0,.20) 28%,
-            rgba(0,0,0,.10) 20%,
-            rgba(0,0,0,0) 20%
-    ),
-    url("images/get-involved_banner.png");
-  background-size: cover;
-  background-position: right;
-  background-repeat: no-repeat;
-  background-color: black;
+/* ==================================================
+   GET INVOLVED HERO
+================================================== */
 
+.involved-hero {
+  position: relative;
+  min-height: 390px;
+  box-sizing: border-box;
   display: flex;
   align-items: center;
-  padding: 80px;
+  padding: 40px 6%;
+  overflow: hidden;
+
+  /* Left side of banner */
+  background: #050708;
+}
+
+
+/* PHOTO */
+.involved-hero::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+
+  top: 0;
+  right: 0;
+  bottom: 0;
+
+  width: 54%;
+
+  background-image: url("/images/get-involved-hero.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+
+/* BLACK → PHOTO BLEND */
+.involved-hero::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  pointer-events: none;
+
+  background: linear-gradient(
+    to right,
+    #050708 0%,
+    #050708 38%,
+    rgba(5, 7, 8, 0.98) 43%,
+    rgba(5, 7, 8, 0.88) 48%,
+    rgba(5, 7, 8, 0.65) 53%,
+    rgba(5, 7, 8, 0.38) 58%,
+    rgba(5, 7, 8, 0.15) 64%,
+    transparent 70%
+  );
+}
+
+
+/* TEXT ABOVE PHOTO + GRADIENT */
+.involved-hero > div {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 720px;
+}
+
+
+.involved-hero h1 {
+  margin: 0 0 20px;
+  color: #f4c21d;
+
+  font-size: clamp(2.8rem, 4vw, 4rem);
+  line-height: 1;
+}
+
+
+.involved-hero p {
+  max-width: 640px;
+  margin: 0 0 28px;
+
+  color: #ffffff;
+  font-size: 1.25rem;
+  line-height: 1.55;
+}
+
+
+/* BUTTONS */
+.involved-hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
 }
 
 
@@ -2551,7 +2623,7 @@ FINAL STRIP
   font-weight: 900;
   line-height: 0.95;
   letter-spacing: -0.03em;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 .hero-line {
@@ -2572,23 +2644,61 @@ FINAL STRIP
 }
 
 /* About Us banner background */
+/* ==================================================
+   ABOUT US HERO
+================================================== */
+
 .about-banner {
-  background-color: #000000;
+  position: relative;
+  min-height: 390px;
+  overflow: hidden;
+  background: #050708;
+}
 
-  background-image:
-    linear-gradient(
-            90deg,
-            rgba(0, 0, 0, 0.35) 0%,
-            rgba(0, 0, 0, 0.30) 35%,
-            rgba(0, 0, 0, 0.15) 65%,
-            rgba(0, 0, 0, 0.05) 100%
-        ),
-    url("images/about-banner-background.png");
+/* TEAM PHOTO */
+.about-banner::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
 
+  top: 0;
+  right: 0;
+  bottom: 0;
 
-    background-size: 50% auto;
-    background-position: center right;
-    background-repeat: no-repeat;
+  width: 51%;
+
+  background-image: url("images/about-us-hero.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* BLACK → PHOTO BLEND */
+.about-banner::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  pointer-events: none;
+
+  background: linear-gradient(
+    to right,
+    #050708 0%,
+    #050708 40%,
+    rgba(5, 7, 8, 0.98) 44%,
+    rgba(5, 7, 8, 0.90) 48%,
+    rgba(5, 7, 8, 0.72) 52%,
+    rgba(5, 7, 8, 0.48) 56%,
+    rgba(5, 7, 8, 0.25) 60%,
+    rgba(5, 7, 8, 0.10) 64%,
+    transparent 69%
+  );
+}
+
+/* KEEP TEXT ABOVE PHOTO + GRADIENT */
+.about-banner .hero-content {
+  position: relative;
+  z-index: 2;
 }
 
 @media (max-width: 500px) {
