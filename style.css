@@ -1636,13 +1636,19 @@ FINAL STRIP
 }
 
 .involved-section {
-  padding: 70px 80px;
+  padding: 30px 50px;
+  text-align: center;
 }
 
 .involved-section h2 {
   font-size: 42px;
-  margin-bottom: 35px;
+  margin-bottom: 5px;
   text-transform: uppercase;
+}
+
+.involved-section span.section-label {
+  font-size: 20px;
+  margin-bottom: 5px;
 }
 
 .yellow-block {

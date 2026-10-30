@@ -1,0 +1,1343 @@
+```css
+/* ==========================================================
+   GET INVOLVED PAGE
+   getinvolved.css
+========================================================== */
+
+
+/* ==========================================================
+   COLOURS
+========================================================== */
+
+.involved-page {
+  --black: #050708;
+  --soft-black: #0b0e10;
+
+  --yellow: #ffd400;
+  --yellow-dark: #e5a900;
+
+  --red: #ed2428;
+
+  --green: #08ad79;
+  --green-dark: #07855f;
+
+  --purple: #653287;
+  --purple-pale: #f6f0f9;
+
+  --blue: #2176ad;
+  --blue-pale: #edf7fd;
+
+  --text: #152131;
+  --muted: #5a6472;
+
+  --light-grey: #f7f8f9;
+  --border: #e3e6e8;
+
+  color: var(--text);
+}
+
+
+.involved-page *,
+.involved-page *::before,
+.involved-page *::after {
+  box-sizing: border-box;
+}
+
+
+.involved-container {
+  width: min(1180px, calc(100% - 48px));
+  margin: 0 auto;
+}
+
+
+
+/* ==========================================================
+   GENERAL HEADINGS
+========================================================== */
+
+.section-heading {
+  max-width: 780px;
+
+  margin: 0 auto 48px;
+
+  text-align: center;
+}
+
+
+.section-label {
+  display: block;
+
+  margin-bottom: 12px;
+
+  color: #7a5510;
+
+  font-size: 0.78rem;
+  font-weight: 800;
+
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+}
+
+
+.section-heading h2 {
+  margin: 0 0 15px;
+
+  color: var(--black);
+
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+  line-height: 1.08;
+}
+
+
+.section-heading > p {
+  margin: 0;
+
+  color: #443b25;
+
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+
+
+/* ==========================================================
+   HERO
+========================================================== */
+
+.involved-hero {
+  width: 100%;
+
+  min-height: 490px;
+
+  display: grid;
+
+  grid-template-columns: 45.5% 54.5%;
+
+  background: var(--black);
+
+  overflow: hidden;
+}
+
+
+/* LEFT SIDE */
+
+.involved-hero-text {
+  position: relative;
+  z-index: 2;
+
+  min-height: 490px;
+
+  padding:
+    72px
+    45px
+    65px
+    max(4vw, 50px);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background: var(--black);
+}
+
+
+.involved-hero-text h1 {
+  margin: 0 0 28px;
+
+  color: var(--yellow);
+
+  font-size: clamp(3.5rem, 5vw, 5.4rem);
+  font-weight: 800;
+  line-height: 1;
+}
+
+
+.involved-hero-text > p {
+  max-width: 760px;
+
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: clamp(1.25rem, 1.7vw, 2rem);
+  line-height: 1.55;
+}
+
+
+/* BUTTONS */
+
+.involved-hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 16px;
+
+  margin-top: 55px;
+}
+
+
+.involved-button {
+  min-height: 64px;
+
+  padding: 16px 34px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 8px;
+
+  background: var(--red);
+  color: #ffffff;
+
+  font-size: 1rem;
+  font-weight: 750;
+
+  text-decoration: none;
+
+  transition:
+    transform 0.2s ease,
+    filter 0.2s ease;
+}
+
+
+.involved-button:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.05);
+}
+
+
+.whatsapp-hero-button {
+  border: 2px solid #ffffff;
+
+  background: var(--green);
+}
+
+
+.whatsapp-hero-button:hover {
+  background: var(--green-dark);
+}
+
+
+/* RIGHT SIDE */
+
+.involved-hero-photo {
+  position: relative;
+
+  min-height: 490px;
+
+  overflow: hidden;
+}
+
+
+.involved-hero-photo::before {
+  content: "";
+
+  position: absolute;
+  z-index: 1;
+
+  left: 0;
+  top: 0;
+  bottom: 0;
+
+  width: 100px;
+
+  background:
+    linear-gradient(
+      to right,
+      var(--black) 0%,
+      rgba(5, 7, 8, 0.72) 30%,
+      rgba(5, 7, 8, 0.28) 65%,
+      transparent 100%
+    );
+
+  pointer-events: none;
+}
+
+
+.involved-hero-photo img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  min-height: 490px;
+
+  object-fit: cover;
+
+  /*
+    Adjust this if your existing photograph needs
+    to move left/right.
+  */
+  object-position: center center;
+}
+
+
+
+/* ==========================================================
+   WHO CAN GET INVOLVED
+   YELLOW SECTION
+========================================================== */
+
+.who-section {
+  padding: 80px 0 90px;
+
+  background: var(--yellow);
+}
+
+
+.who-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 20px;
+}
+
+
+.who-card {
+  min-height: 245px;
+
+  padding: 30px 25px;
+
+  border-radius: 18px;
+
+  background: #ffffff;
+
+  text-align: center;
+
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.07);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+
+.who-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 14px 30px rgba(0, 0, 0, 0.12);
+}
+
+
+.who-icon {
+  width: 60px;
+  height: 60px;
+
+  margin: 0 auto 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #fff5c7;
+
+  font-size: 1.6rem;
+}
+
+
+.who-card h3 {
+  margin: 0 0 11px;
+
+  color: var(--black);
+
+  font-size: 1.15rem;
+}
+
+
+.who-card p {
+  margin: 0;
+
+  color: var(--muted);
+
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+
+
+/* ==========================================================
+   WORKING WITH OUR COMMUNITY
+========================================================== */
+
+.community-section {
+  padding: 95px 0;
+
+  background: #ffffff;
+}
+
+
+.community-grid {
+  display: grid;
+
+  grid-template-columns: 1.15fr 0.85fr;
+
+  gap: 65px;
+
+  align-items: center;
+}
+
+
+/* PHOTO */
+
+.community-photo {
+  position: relative;
+
+  overflow: hidden;
+
+  border-radius: 22px;
+}
+
+
+.community-photo::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  bottom: 0;
+
+  width: 100%;
+  height: 6px;
+
+  background: var(--yellow);
+}
+
+
+.community-photo img {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  aspect-ratio: 3 / 2;
+
+  object-fit: cover;
+  object-position: center center;
+}
+
+
+/* TEXT */
+
+.community-text .section-label {
+  color:#007f00;
+}
+
+
+.community-text h2 {
+  margin: 0 0 24px;
+
+  color:#9B1003;
+
+  font-size: clamp(2.3rem, 4vw, 3.5rem);
+  line-height: 1.08;
+}
+
+
+.community-text p {
+  margin: 0 0 16px;
+
+  color: black;
+
+  font-size: 1.03rem;
+  line-height: 1.72;
+}
+
+
+.community-link {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 8px;
+
+  margin-top: 12px;
+
+  padding-bottom: 3px;
+
+  border-bottom: 2px solid var(--yellow);
+
+  color: var(--black);
+
+  font-weight: 750;
+
+  text-decoration: none;
+}
+
+
+.community-link span {
+  transition: transform 0.2s ease;
+}
+
+
+.community-link:hover span {
+  transform: translateX(5px);
+}
+
+
+
+/* ==========================================================
+   WAYS YOU CAN CONTRIBUTE
+========================================================== */
+
+.contribute-section {
+  padding: 90px 0;
+
+  background: var(--black);
+}
+
+
+.dark-heading h2 {
+  color: #ffffff;
+}
+
+
+.light-label {
+  color: var(--yellow);
+}
+
+
+.contribute-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 45px;
+}
+
+
+.contribute-item {
+  position: relative;
+
+  padding-top: 4px;
+}
+
+
+.contribute-number {
+  display: block;
+
+  margin-bottom: 20px;
+
+  color: var(--yellow);
+
+  font-size: 2.8rem;
+  font-weight: 300;
+  line-height: 1;
+}
+
+
+.contribute-item h3 {
+  margin: 0 0 13px;
+
+  color: #ffffff;
+
+  font-size: 1.25rem;
+}
+
+
+.contribute-item p {
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.72);
+
+  font-size: 0.96rem;
+  line-height: 1.65;
+}
+
+
+
+/* ==========================================================
+   PUBLIC INVOLVEMENT
+========================================================== */
+
+.public-involvement-section {
+  padding: 95px 0 45px;
+
+  background: #0a6923;
+}
+
+
+.public-involvement-content {
+  max-width: 930px;
+
+  margin: 0 auto;
+}
+
+
+.public-involvement-content > .section-label {
+  color:var(--black);
+}
+
+
+.public-involvement-content > h2 {
+  margin: 0 0 25px;
+
+  color: #ebdd21;
+
+  font-size: clamp(2.3rem, 4vw, 3.4rem);
+  line-height: 1.08;
+}
+
+
+.public-involvement-content > p {
+  max-width: 850px;
+
+  margin: 0 0 17px;
+
+  color: #ebdd21;
+
+  font-size: 1.04rem;
+  line-height: 1.75;
+}
+
+
+.public-involvement-lead {
+  color: var(--text) !important;
+
+  font-size: 1.15rem !important;
+}
+
+
+.public-involvement-content strong {
+  color:  #ebdd21;
+}
+
+
+
+/* ==========================================================
+   PPIE EXPLANATION BOX
+========================================================== */
+
+.ppie-box {
+  display: grid;
+
+  grid-template-columns: 70px 1fr;
+
+  gap: 27px;
+
+  margin-top: 40px;
+
+  padding: 35px 38px;
+
+  border-left: 6px solid var(--yellow);
+  border-radius: 0 18px 18px 0;
+
+  background: black;
+}
+
+
+.ppie-symbol {
+  width: 58px;
+  height: 58px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: var(--yellow);
+  color: var(--black);
+
+  font-size: 1.7rem;
+  font-weight: 800;
+}
+
+
+.ppie-copy h3 {
+  margin: 1px 0 12px;
+
+  color: #2fac09;
+
+  font-size: 1.3rem;
+}
+
+
+.ppie-copy p {
+  margin: 0 0 10px;
+
+  color: #ebdd21;
+
+  line-height: 1.68;
+}
+
+
+.ppie-highlight {
+  margin-top: 17px !important;
+
+  color: white !important;
+
+  font-weight: 750;
+}
+
+
+
+/* ==========================================================
+   RESEARCH STUDY NOTICE
+========================================================== */
+
+.research-notice-section {
+  padding: 20px 0 90px;
+
+  background: #ffffff;
+}
+
+
+.research-notice {
+  display: grid;
+
+  grid-template-columns: 65px 1fr;
+
+  gap: 26px;
+
+  padding: 30px 35px;
+
+  border: 1px solid #d7e6f0;
+  border-radius: 16px;
+
+  background: #eef7fc;
+}
+
+
+.research-notice-icon {
+  width: 52px;
+  height: 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #d6ebf8;
+  color: var(--blue);
+
+  font-size: 1.7rem;
+  font-weight: 800;
+}
+
+
+.research-notice-text h3 {
+  margin: 0 0 9px;
+
+  color: var(--black);
+
+  font-size: 1.25rem;
+}
+
+
+.research-notice-text p {
+  margin: 0 0 7px;
+
+  color: var(--muted);
+
+  line-height: 1.6;
+}
+
+
+.research-notice-important {
+  color: var(--black) !important;
+
+  font-weight: 750;
+}
+
+
+
+/* ==========================================================
+   WHATSAPP COMMUNITY
+========================================================== */
+
+.whatsapp-section {
+  padding: 90px 0;
+
+  background:
+    linear-gradient(
+      135deg,
+      #eaf8f3 0%,
+      #f7fcfa 100%
+    );
+
+  border-top: 7px solid var(--green);
+}
+
+
+.whatsapp-content {
+  display: grid;
+
+  grid-template-columns: 1fr auto;
+
+  gap: 80px;
+
+  align-items: center;
+}
+
+
+.whatsapp-text {
+  max-width: 720px;
+}
+
+
+.whatsapp-label {
+  color: var(--green-dark);
+}
+
+
+.whatsapp-text h2 {
+  margin: 0 0 18px;
+
+  color: var(--black);
+
+  font-size: clamp(2.3rem, 4vw, 3.4rem);
+  line-height: 1.08;
+}
+
+
+.whatsapp-intro {
+  max-width: 660px;
+
+  margin: 0;
+
+  color: var(--muted);
+
+  font-size: 1.04rem;
+  line-height: 1.72;
+}
+
+
+.whatsapp-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 52px;
+
+  margin-top: 26px;
+
+  padding: 13px 25px;
+
+  border-radius: 8px;
+
+  background: var(--green);
+  color: #ffffff;
+
+  font-weight: 750;
+
+  text-decoration: none;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+
+.whatsapp-button:hover {
+  background: var(--green-dark);
+
+  transform: translateY(-2px);
+}
+
+
+.whatsapp-note {
+  max-width: 650px;
+
+  margin: 20px 0 0;
+
+  color: var(--muted);
+
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+
+
+/* QR CODE */
+
+.whatsapp-qr {
+  text-align: center;
+}
+
+
+.qr-frame {
+  padding: 13px;
+
+  border: 2px solid var(--green);
+  border-radius: 18px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 10px 30px rgba(5, 70, 50, 0.1);
+}
+
+
+.whatsapp-qr img {
+  display: block;
+
+  width: 180px;
+  height: 180px;
+
+  object-fit: contain;
+}
+
+
+.whatsapp-qr > p {
+  margin: 11px 0 0;
+
+  color: var(--green-dark);
+
+  font-size: 0.85rem;
+  font-weight: 750;
+}
+
+
+
+/* ==========================================================
+   MICROSOFT FORM
+========================================================== */
+
+.form-section {
+  padding: 95px 0;
+
+  background: #ffffff;
+}
+
+
+.form-heading {
+  max-width: 820px;
+
+  margin: 0 auto 42px;
+
+  text-align: center;
+}
+
+
+.form-heading .section-label {
+  color: var(--red);
+}
+
+
+.form-heading h2 {
+  margin: 0 0 17px;
+
+  color: var(--black);
+
+  font-size: clamp(2.3rem, 4vw, 3.4rem);
+  line-height: 1.08;
+}
+
+
+.form-heading > p {
+  max-width: 720px;
+
+  margin: 0 auto 13px;
+
+  color: var(--muted);
+
+  font-size: 1.03rem;
+  line-height: 1.7;
+}
+
+
+.form-note {
+  margin-top: 24px !important;
+
+  padding: 15px 20px;
+
+  border-left: 4px solid var(--yellow);
+
+  background: #fff9df;
+
+  color: var(--black) !important;
+
+  font-size: 0.9rem !important;
+  font-weight: 650;
+  line-height: 1.55 !important;
+
+  text-align: left;
+}
+
+
+
+/* MICROSOFT FORM */
+
+.microsoft-form {
+  width: min(920px, 100%);
+
+  margin: 0 auto;
+
+  overflow: hidden;
+
+  border: 1px solid var(--border);
+  border-radius: 16px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 12px 35px rgba(0, 0, 0, 0.06);
+}
+
+
+.microsoft-form iframe {
+  display: block;
+
+  width: 100%;
+  height: 850px;
+
+  border: 0;
+}
+
+
+
+/* ==========================================================
+   TABLET
+========================================================== */
+
+@media (max-width: 1100px) {
+
+  /* HERO */
+
+  .involved-hero {
+    grid-template-columns: 48% 52%;
+  }
+
+
+  .involved-hero-text {
+    padding-left: 40px;
+    padding-right: 30px;
+  }
+
+
+  .involved-hero-text > p {
+    font-size: 1.25rem;
+  }
+
+
+  .involved-hero-buttons {
+    margin-top: 35px;
+  }
+
+
+  .involved-button {
+    min-height: 54px;
+
+    padding: 13px 22px;
+
+    font-size: 0.9rem;
+  }
+
+
+  /* WHO */
+
+  .who-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
+  /* COMMUNITY */
+
+  .community-grid {
+    grid-template-columns: 1fr;
+
+    gap: 42px;
+  }
+
+
+  .community-photo {
+    max-width: 800px;
+  }
+
+
+  /* CONTRIBUTIONS */
+
+  .contribute-grid {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 45px;
+  }
+
+}
+
+
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media (max-width: 760px) {
+
+  .involved-container {
+    width: min(100% - 32px, 1180px);
+  }
+
+
+  /* HERO */
+
+  .involved-hero {
+    display: flex;
+    flex-direction: column;
+
+    min-height: 0;
+  }
+
+
+  .involved-hero-photo {
+    order: 1;
+
+    width: 100%;
+    min-height: 300px;
+  }
+
+
+  .involved-hero-photo::before {
+    left: 0;
+    right: 0;
+    top: auto;
+    bottom: 0;
+
+    width: 100%;
+    height: 80px;
+
+    background:
+      linear-gradient(
+        to bottom,
+        transparent 0%,
+        rgba(5, 7, 8, 0.35) 55%,
+        var(--black) 100%
+      );
+  }
+
+
+  .involved-hero-photo img {
+    min-height: 300px;
+    height: 300px;
+
+    object-position: center center;
+  }
+
+
+  .involved-hero-text {
+    order: 2;
+
+    min-height: 0;
+
+    padding: 42px 24px 55px;
+  }
+
+
+  .involved-hero-text h1 {
+    margin-bottom: 20px;
+
+    font-size: 3.1rem;
+  }
+
+
+  .involved-hero-text > p {
+    font-size: 1.15rem;
+  }
+
+
+  .involved-hero-buttons {
+    flex-direction: column;
+
+    margin-top: 32px;
+  }
+
+
+  .involved-button {
+    width: 100%;
+
+    min-height: 54px;
+
+    text-align: center;
+  }
+
+
+  /* WHO */
+
+  .who-section {
+    padding: 65px 0;
+  }
+
+
+  .who-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .who-card {
+    min-height: auto;
+  }
+
+
+  /* COMMUNITY */
+
+  .community-section {
+    padding: 70px 0;
+  }
+
+
+  .community-grid {
+    gap: 32px;
+  }
+
+
+  .community-photo {
+    border-radius: 16px;
+  }
+
+
+  .community-photo img {
+    aspect-ratio: 4 / 3;
+
+    /*
+      Slightly wider crop on mobile to keep
+      all four people visible.
+    */
+    object-position: center center;
+  }
+
+
+  .community-text h2 {
+    font-size: 2.2rem;
+  }
+
+
+  /* CONTRIBUTIONS */
+
+  .contribute-section {
+    padding: 70px 0;
+  }
+
+
+  .contribute-grid {
+    grid-template-columns: 1fr;
+
+    gap: 38px;
+  }
+
+
+  /* PUBLIC INVOLVEMENT */
+
+  .public-involvement-section {
+    padding: 70px 0 35px;
+  }
+
+
+  .public-involvement-content > h2 {
+    font-size: 2.2rem;
+  }
+
+
+  .ppie-box {
+    grid-template-columns: 1fr;
+
+    padding: 27px 24px;
+  }
+
+
+  /* RESEARCH NOTICE */
+
+  .research-notice-section {
+    padding-bottom: 65px;
+  }
+
+
+  .research-notice {
+    grid-template-columns: 1fr;
+
+    padding: 25px 23px;
+  }
+
+
+  /* WHATSAPP */
+
+  .whatsapp-section {
+    padding: 70px 0;
+  }
+
+
+  .whatsapp-content {
+    grid-template-columns: 1fr;
+
+    gap: 38px;
+  }
+
+
+  .whatsapp-text h2 {
+    font-size: 2.2rem;
+  }
+
+
+  .whatsapp-qr {
+    justify-self: start;
+  }
+
+
+  /* FORM */
+
+  .form-section {
+    padding: 70px 0;
+  }
+
+
+  .form-heading h2 {
+    font-size: 2.2rem;
+  }
+
+
+  .microsoft-form {
+    border-radius: 10px;
+  }
+
+
+  .microsoft-form iframe {
+    height: 950px;
+  }
+
+}
+
+
+
+/* ==========================================================
+   SMALL MOBILE
+========================================================== */
+
+@media (max-width: 430px) {
+
+  .involved-hero-photo,
+  .involved-hero-photo img {
+    min-height: 250px;
+    height: 250px;
+  }
+
+
+  .involved-hero-text h1 {
+    font-size: 2.75rem;
+  }
+
+
+  .section-heading h2,
+  .community-text h2,
+  .public-involvement-content > h2,
+  .whatsapp-text h2,
+  .form-heading h2 {
+    font-size: 2rem;
+  }
+
+
+  .who-card {
+    padding: 25px 20px;
+  }
+
+
+  .whatsapp-qr img {
+    width: 160px;
+    height: 160px;
+  }
+
+}
+```
